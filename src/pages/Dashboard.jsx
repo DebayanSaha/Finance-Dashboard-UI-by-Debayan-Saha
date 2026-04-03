@@ -1,24 +1,12 @@
-import React from "react";
-import Topbar from "../component/Topbar";
-import Sidebar from "../component/Sidebar";
-import StatsCards from "../component/StatsCards";
-import BalanceChart from "../component/BalanceChart";
-import StatisticsChart from "../component/Statisticschart";
+import StatsCards from "../component/DashboardPageComponents/StatsCards";
+import BalanceChart from "../component/DashboardPageComponents/BalanceChart";
+import StatisticsChart from "../component/DashboardPageComponents/Statisticschart";
 
 const Dashboard = () => {
   return (
     <div className="flex bg-white h-screen p-1">
-      {/* Sidebar */}
-      <div className="w-64">
-        <Sidebar />
-      </div>
-
-      {/* Main Content */}
       <div className="flex-1 flex flex-col">
-        {/* Topbar */}
-        <div className="fixed top-0 left-64 right-0 h-22 flex items-center justify-center py-2 z-50">
-          <Topbar />
-        </div>
+        
         {/* Page Content */}
         <div className="flex-1 p-6 mt-20">
           <div className="w-95 mt-2 h-18 bg-[#fbd69e53] p-6 flex items-center justify-center rounded-xl">

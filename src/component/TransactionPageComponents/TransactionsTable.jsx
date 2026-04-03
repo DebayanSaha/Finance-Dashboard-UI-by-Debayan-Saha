@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import transactionsData from "../data/transactionsData";
+import transactionsData from "../../data/transactionsData";
 
 const PAGE_SIZE = 10;
 

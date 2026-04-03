@@ -12,7 +12,7 @@ import {
 const navItems = [
   { id: "dashboard",    label: "Dashboard",    icon: LayoutDashboard },
   { id: "transactions", label: "Transactions", icon: ArrowLeftRight   },
-  { id: "inside",       label: "Inside",       icon: FileText         },
+  { id: "inside",       label: "Insights",       icon: FileText         },
 ];
 
 const Sidebar = () => {

@@ -8,17 +8,20 @@ import Transactions from "./pages/Transactions";
 import Insights from "./pages/Insights";
 import FinanceDashboard from "./pages/FinanceDashboard";
 
+import MainLayout from "./layouts/MainLayout";
+
 const App = () => {
   return (
     <Router>
       <Routes>
-        {/* Default route */}
-        <Route path="/" element={<Dashboard />} />
+        {/* Layout Wrapper */}
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/transactions" element={<Transactions />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/3" element={<FinanceDashboard />} />
+        </Route>
 
-        {/* Other routes */}
-        <Route path="/transactions" element={<Transactions />} />
-        <Route path="/insights" element={<Insights />} />
-        <Route path="/3" element={<FinanceDashboard />} />
       </Routes>
     </Router>
   );
