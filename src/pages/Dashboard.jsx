@@ -1,12 +1,33 @@
+import { useState } from "react";
 import StatsCards from "../component/DashboardPageComponents/StatsCards";
 import BalanceChart from "../component/DashboardPageComponents/BalanceChart";
 import StatisticsChart from "../component/DashboardPageComponents/Statisticschart";
+import MonthSelector from "../component/DashboardPageComponents/MonthSelector";
+
+const MONTHS_FULL = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
 
 const Dashboard = () => {
+  const today = new Date();
+  const [selectedPeriod, setSelectedPeriod] = useState({
+    month: today.getMonth(),
+    year: today.getFullYear(),
+  });
+
+  const isCurrentMonth =
+    selectedPeriod.month === today.getMonth() &&
+    selectedPeriod.year === today.getFullYear();
+
+  const labelText = isCurrentMonth
+    ? "This month"
+    : `${MONTHS_FULL[selectedPeriod.month]} ${selectedPeriod.year}`;
+
   return (
     <div className="flex bg-white h-screen p-1">
       <div className="flex-1 flex flex-col">
-        
+
         {/* Page Content */}
         <div className="flex-1 p-6 mt-20">
           <div className="w-95 mt-2 h-18 bg-[#fbd69e53] p-6 flex items-center justify-center rounded-xl">
@@ -16,14 +37,21 @@ const Dashboard = () => {
           </div>
           <div className="">
             <div className="w-full h-15 mt-8 flex gap-2 ">
-              <div className="w-12 h-12 rounded-full border border-[#fbd69e] flex items-center justify-center">
-                <i className="ri-calendar-2-line text-2xl text-[#ff7332]"></i>
-              </div>
-              <div className="w-35 h-12 rounded-full border border-[#fbd69e] flex items-center justify-center">
+
+              {/* Calendar icon — clicking opens MonthSelector popup */}
+              <MonthSelector
+                selectedMonth={selectedPeriod.month}
+                selectedYear={selectedPeriod.year}
+                onMonthChange={setSelectedPeriod}
+              />
+
+              {/* Label pill — shows selected month name */}
+              <div className="w-40 h-12 rounded-full border border-[#fbd69e] flex items-center justify-center">
                 <h1 className="text-xl font-[font2] text-[#8f5b43]">
-                  This month
+                  {labelText}
                 </h1>
               </div>
+
             </div>
             <div className="w-full px-2 py-1 ">
               <StatsCards />

@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
+import { useRole } from "../../context/RoleContext";
 
 const Topbar = () => {
-  const [role, setRole] = useState("Admin");
+  const { role, setRole } = useRole();
 
   return (
     <div className="w-full flex justify-center font-[font2]">
@@ -41,18 +42,10 @@ const Topbar = () => {
         {/* Search Bar */}
         <div className="flex items-center gap-2 bg-white/10 border border-[#ffffff34] px-4 py-2 rounded-full w-[40%]">
           <i className="ri-search-line text-white text-lg"></i>
-
           <input
             type="text"
             placeholder="Search..."
-            className="
-              bg-transparent
-              outline-none
-              text-white
-              placeholder-white/80
-              w-full
-              text-sm
-            "
+            className="bg-transparent outline-none text-white placeholder-white/80 w-full text-sm"
           />
         </div>
 
@@ -61,7 +54,6 @@ const Topbar = () => {
           <span className="text-white/80 text-sm hidden sm:block">
             Hello, User
           </span>
-
           <img
             src="https://i.pravatar.cc/40"
             alt="avatar"

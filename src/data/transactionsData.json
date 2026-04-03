@@ -1,0 +1,5002 @@
+[
+  {
+    "id": 500,
+    "transactionId": "TXN-2024-0500",
+    "date": "2025-05-14",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 4774,
+    "spark": [1, 8, 1, 8, 4, 3, 4]
+  },
+  {
+    "id": 499,
+    "transactionId": "TXN-2024-0499",
+    "date": "2025-05-13",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 3288,
+    "spark": [2, 1, 1, 1, 1, 2, 6]
+  },
+  {
+    "id": 498,
+    "transactionId": "TXN-2024-0498",
+    "date": "2025-05-12",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 982,
+    "spark": [1, 1, 2, 1, 1, 3, 2]
+  },
+  {
+    "id": 497,
+    "transactionId": "TXN-2024-0497",
+    "date": "2025-05-11",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 4087,
+    "spark": [8, 6, 6, 2, 2, 6, 3]
+  },
+  {
+    "id": 496,
+    "transactionId": "TXN-2024-0496",
+    "date": "2025-05-10",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 552,
+    "spark": [3, 1, 1, 1, 1, 1, 2]
+  },
+  {
+    "id": 495,
+    "transactionId": "TXN-2024-0495",
+    "date": "2025-05-09",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 959,
+    "spark": [1, 4, 1, 1, 4, 1, 4]
+  },
+  {
+    "id": 494,
+    "transactionId": "TXN-2024-0494",
+    "date": "2025-05-08",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 7470,
+    "spark": [7, 3, 3, 3, 11, 9, 4]
+  },
+  {
+    "id": 493,
+    "transactionId": "TXN-2024-0493",
+    "date": "2025-05-07",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 537,
+    "spark": [3, 1, 3, 1, 1, 1, 1]
+  },
+  {
+    "id": 492,
+    "transactionId": "TXN-2024-0492",
+    "date": "2025-05-06",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 25183,
+    "spark": [27, 27, 26, 27, 28, 22, 24]
+  },
+  {
+    "id": 491,
+    "transactionId": "TXN-2024-0491",
+    "date": "2025-05-05",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1295,
+    "spark": [2, 3, 1, 5, 1, 3, 3]
+  },
+  {
+    "id": 490,
+    "transactionId": "TXN-2024-0490",
+    "date": "2025-05-04",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2208,
+    "spark": [6, 1, 2, 1, 5, 6, 4]
+  },
+  {
+    "id": 489,
+    "transactionId": "TXN-2024-0489",
+    "date": "2025-05-03",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1645,
+    "spark": [1, 1, 1, 2, 1, 1, 1]
+  },
+  {
+    "id": 488,
+    "transactionId": "TXN-2024-0488",
+    "date": "2025-05-02",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 5170,
+    "spark": [9, 1, 6, 9, 6, 1, 2]
+  },
+  {
+    "id": 487,
+    "transactionId": "TXN-2024-0487",
+    "date": "2025-05-01",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 29624,
+    "spark": [32, 33, 33, 25, 25, 31, 24]
+  },
+  {
+    "id": 486,
+    "transactionId": "TXN-2024-0486",
+    "date": "2025-04-30",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 3129,
+    "spark": [1, 1, 2, 5, 1, 1, 1]
+  },
+  {
+    "id": 485,
+    "transactionId": "TXN-2024-0485",
+    "date": "2025-04-29",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1608,
+    "spark": [4, 1, 2, 1, 1, 5, 1]
+  },
+  {
+    "id": 484,
+    "transactionId": "TXN-2024-0484",
+    "date": "2025-04-28",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2917,
+    "spark": [1, 5, 1, 6, 3, 1, 2]
+  },
+  {
+    "id": 483,
+    "transactionId": "TXN-2024-0483",
+    "date": "2025-04-27",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 9241,
+    "spark": [13, 13, 8, 11, 8, 9, 12]
+  },
+  {
+    "id": 482,
+    "transactionId": "TXN-2024-0482",
+    "date": "2025-04-26",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 3169,
+    "spark": [1, 6, 3, 2, 1, 2, 5]
+  },
+  {
+    "id": 481,
+    "transactionId": "TXN-2024-0481",
+    "date": "2025-04-25",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1086,
+    "spark": [1, 1, 2, 2, 1, 2, 1]
+  },
+  {
+    "id": 480,
+    "transactionId": "TXN-2024-0480",
+    "date": "2025-04-24",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1100,
+    "spark": [5, 1, 1, 5, 1, 1, 2]
+  },
+  {
+    "id": 479,
+    "transactionId": "TXN-2024-0479",
+    "date": "2025-04-23",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 821,
+    "spark": [3, 3, 2, 1, 1, 4, 1]
+  },
+  {
+    "id": 478,
+    "transactionId": "TXN-2024-0478",
+    "date": "2025-04-22",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 2644,
+    "spark": [1, 1, 3, 1, 3, 1, 1]
+  },
+  {
+    "id": 477,
+    "transactionId": "TXN-2024-0477",
+    "date": "2025-04-21",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 2300,
+    "spark": [1, 3, 5, 1, 1, 1, 1]
+  },
+  {
+    "id": 476,
+    "transactionId": "TXN-2024-0476",
+    "date": "2025-04-20",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 17746,
+    "spark": [14, 19, 12, 12, 20, 20, 20]
+  },
+  {
+    "id": 475,
+    "transactionId": "TXN-2024-0475",
+    "date": "2025-04-19",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2588,
+    "spark": [6, 1, 1, 1, 6, 1, 1]
+  },
+  {
+    "id": 474,
+    "transactionId": "TXN-2024-0474",
+    "date": "2025-04-18",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 18231,
+    "spark": [20, 14, 19, 13, 21, 20, 17]
+  },
+  {
+    "id": 473,
+    "transactionId": "TXN-2024-0473",
+    "date": "2025-04-17",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1206,
+    "spark": [2, 1, 3, 1, 3, 4, 3]
+  },
+  {
+    "id": 472,
+    "transactionId": "TXN-2024-0472",
+    "date": "2025-04-16",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 92756,
+    "spark": [92, 91, 96, 95, 87, 96, 92]
+  },
+  {
+    "id": 471,
+    "transactionId": "TXN-2024-0471",
+    "date": "2025-04-15",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 2380,
+    "spark": [1, 3, 1, 1, 3, 1, 1]
+  },
+  {
+    "id": 470,
+    "transactionId": "TXN-2024-0470",
+    "date": "2025-04-14",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 77387,
+    "spark": [75, 79, 74, 77, 72, 73, 77]
+  },
+  {
+    "id": 469,
+    "transactionId": "TXN-2024-0469",
+    "date": "2025-04-13",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 787,
+    "spark": [3, 1, 1, 3, 1, 1, 1]
+  },
+  {
+    "id": 468,
+    "transactionId": "TXN-2024-0468",
+    "date": "2025-04-12",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 79726,
+    "spark": [82, 76, 81, 76, 80, 80, 82]
+  },
+  {
+    "id": 467,
+    "transactionId": "TXN-2024-0467",
+    "date": "2025-04-11",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 79473,
+    "spark": [74, 82, 82, 82, 81, 80, 83]
+  },
+  {
+    "id": 466,
+    "transactionId": "TXN-2024-0466",
+    "date": "2025-04-10",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 94961,
+    "spark": [95, 98, 93, 91, 97, 89, 97]
+  },
+  {
+    "id": 465,
+    "transactionId": "TXN-2024-0465",
+    "date": "2025-04-09",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 134,
+    "spark": [1, 1, 3, 1, 3, 2, 1]
+  },
+  {
+    "id": 464,
+    "transactionId": "TXN-2024-0464",
+    "date": "2025-04-08",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1944,
+    "spark": [1, 5, 1, 1, 1, 2, 3]
+  },
+  {
+    "id": 463,
+    "transactionId": "TXN-2024-0463",
+    "date": "2025-04-07",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3901,
+    "spark": [5, 1, 2, 1, 7, 2, 4]
+  },
+  {
+    "id": 462,
+    "transactionId": "TXN-2024-0462",
+    "date": "2025-04-06",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7241,
+    "spark": [2, 2, 5, 4, 4, 6, 10]
+  },
+  {
+    "id": 461,
+    "transactionId": "TXN-2024-0461",
+    "date": "2025-04-05",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2322,
+    "spark": [5, 6, 1, 5, 1, 2, 2]
+  },
+  {
+    "id": 460,
+    "transactionId": "TXN-2024-0460",
+    "date": "2025-04-04",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2922,
+    "spark": [4, 1, 5, 6, 6, 1, 4]
+  },
+  {
+    "id": 459,
+    "transactionId": "TXN-2024-0459",
+    "date": "2025-04-03",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2828,
+    "spark": [6, 1, 1, 3, 4, 1, 4]
+  },
+  {
+    "id": 458,
+    "transactionId": "TXN-2024-0458",
+    "date": "2025-04-02",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 4726,
+    "spark": [2, 6, 6, 3, 3, 7, 7]
+  },
+  {
+    "id": 457,
+    "transactionId": "TXN-2024-0457",
+    "date": "2025-04-01",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2653,
+    "spark": [4, 4, 6, 6, 2, 1, 1]
+  },
+  {
+    "id": 456,
+    "transactionId": "TXN-2024-0456",
+    "date": "2025-03-31",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1080,
+    "spark": [1, 1, 5, 3, 1, 1, 3]
+  },
+  {
+    "id": 455,
+    "transactionId": "TXN-2024-0455",
+    "date": "2025-03-30",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2549,
+    "spark": [4, 1, 1, 4, 5, 1, 1]
+  },
+  {
+    "id": 454,
+    "transactionId": "TXN-2024-0454",
+    "date": "2025-03-29",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 9590,
+    "spark": [10, 7, 6, 4, 10, 10, 8]
+  },
+  {
+    "id": 453,
+    "transactionId": "TXN-2024-0453",
+    "date": "2025-03-28",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 306,
+    "spark": [1, 1, 1, 2, 1, 4, 1]
+  },
+  {
+    "id": 452,
+    "transactionId": "TXN-2024-0452",
+    "date": "2025-03-27",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 267,
+    "spark": [1, 1, 1, 1, 4, 4, 1]
+  },
+  {
+    "id": 451,
+    "transactionId": "TXN-2024-0451",
+    "date": "2025-03-26",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1546,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 450,
+    "transactionId": "TXN-2024-0450",
+    "date": "2025-03-25",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 23603,
+    "spark": [23, 22, 24, 27, 21, 19, 19]
+  },
+  {
+    "id": 449,
+    "transactionId": "TXN-2024-0449",
+    "date": "2025-03-24",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5237,
+    "spark": [6, 2, 5, 1, 5, 7, 1]
+  },
+  {
+    "id": 448,
+    "transactionId": "TXN-2024-0448",
+    "date": "2025-03-23",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5647,
+    "spark": [1, 9, 2, 4, 1, 7, 1]
+  },
+  {
+    "id": 447,
+    "transactionId": "TXN-2024-0447",
+    "date": "2025-03-22",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 28432,
+    "spark": [27, 25, 23, 23, 24, 30, 31]
+  },
+  {
+    "id": 446,
+    "transactionId": "TXN-2024-0446",
+    "date": "2025-03-21",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 7975,
+    "spark": [9, 9, 11, 3, 7, 6, 10]
+  },
+  {
+    "id": 445,
+    "transactionId": "TXN-2024-0445",
+    "date": "2025-03-20",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1791,
+    "spark": [1, 1, 3, 2, 2, 3, 1]
+  },
+  {
+    "id": 444,
+    "transactionId": "TXN-2024-0444",
+    "date": "2025-03-19",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 85223,
+    "spark": [80, 83, 88, 88, 81, 87, 88]
+  },
+  {
+    "id": 443,
+    "transactionId": "TXN-2024-0443",
+    "date": "2025-03-18",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2341,
+    "spark": [1, 1, 5, 2, 1, 1, 6]
+  },
+  {
+    "id": 442,
+    "transactionId": "TXN-2024-0442",
+    "date": "2025-03-17",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 22237,
+    "spark": [19, 26, 19, 20, 25, 20, 18]
+  },
+  {
+    "id": 441,
+    "transactionId": "TXN-2024-0441",
+    "date": "2025-03-16",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 18204,
+    "spark": [19, 16, 15, 15, 17, 19, 22]
+  },
+  {
+    "id": 440,
+    "transactionId": "TXN-2024-0440",
+    "date": "2025-03-15",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1358,
+    "spark": [1, 1, 1, 2, 5, 1, 1]
+  },
+  {
+    "id": 439,
+    "transactionId": "TXN-2024-0439",
+    "date": "2025-03-14",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 563,
+    "spark": [1, 1, 1, 1, 1, 2, 1]
+  },
+  {
+    "id": 438,
+    "transactionId": "TXN-2024-0438",
+    "date": "2025-03-13",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 22168,
+    "spark": [20, 22, 19, 24, 26, 23, 22]
+  },
+  {
+    "id": 437,
+    "transactionId": "TXN-2024-0437",
+    "date": "2025-03-12",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 94973,
+    "spark": [91, 93, 98, 92, 98, 91, 90]
+  },
+  {
+    "id": 436,
+    "transactionId": "TXN-2024-0436",
+    "date": "2025-03-11",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 494,
+    "spark": [1, 1, 4, 1, 2, 1, 1]
+  },
+  {
+    "id": 435,
+    "transactionId": "TXN-2024-0435",
+    "date": "2025-03-10",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 280,
+    "spark": [1, 4, 1, 3, 1, 1, 1]
+  },
+  {
+    "id": 434,
+    "transactionId": "TXN-2024-0434",
+    "date": "2025-03-09",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 82079,
+    "spark": [81, 77, 85, 83, 80, 81, 85]
+  },
+  {
+    "id": 433,
+    "transactionId": "TXN-2024-0433",
+    "date": "2025-03-08",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2032,
+    "spark": [1, 1, 1, 2, 1, 3, 5]
+  },
+  {
+    "id": 432,
+    "transactionId": "TXN-2024-0432",
+    "date": "2025-03-07",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 1946,
+    "spark": [1, 2, 1, 3, 1, 3, 1]
+  },
+  {
+    "id": 431,
+    "transactionId": "TXN-2024-0431",
+    "date": "2025-03-06",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3292,
+    "spark": [3, 7, 1, 3, 2, 5, 7]
+  },
+  {
+    "id": 430,
+    "transactionId": "TXN-2024-0430",
+    "date": "2025-03-05",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 331,
+    "spark": [4, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 429,
+    "transactionId": "TXN-2024-0429",
+    "date": "2025-03-04",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2139,
+    "spark": [1, 3, 1, 3, 5, 1, 1]
+  },
+  {
+    "id": 428,
+    "transactionId": "TXN-2024-0428",
+    "date": "2025-03-03",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 71157,
+    "spark": [74, 66, 66, 72, 74, 71, 71]
+  },
+  {
+    "id": 427,
+    "transactionId": "TXN-2024-0427",
+    "date": "2025-03-02",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 2963,
+    "spark": [1, 3, 1, 4, 1, 5, 4]
+  },
+  {
+    "id": 426,
+    "transactionId": "TXN-2024-0426",
+    "date": "2025-03-01",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 3318,
+    "spark": [4, 7, 3, 5, 1, 5, 3]
+  },
+  {
+    "id": 425,
+    "transactionId": "TXN-2024-0425",
+    "date": "2025-02-28",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 84990,
+    "spark": [85, 85, 81, 87, 88, 81, 84]
+  },
+  {
+    "id": 424,
+    "transactionId": "TXN-2024-0424",
+    "date": "2025-02-27",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1198,
+    "spark": [1, 1, 1, 1, 2, 3, 5]
+  },
+  {
+    "id": 423,
+    "transactionId": "TXN-2024-0423",
+    "date": "2025-02-26",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3398,
+    "spark": [1, 1, 2, 7, 5, 7, 6]
+  },
+  {
+    "id": 422,
+    "transactionId": "TXN-2024-0422",
+    "date": "2025-02-25",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 9339,
+    "spark": [5, 7, 11, 10, 9, 10, 6]
+  },
+  {
+    "id": 421,
+    "transactionId": "TXN-2024-0421",
+    "date": "2025-02-24",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 4575,
+    "spark": [4, 1, 1, 6, 3, 7, 8]
+  },
+  {
+    "id": 420,
+    "transactionId": "TXN-2024-0420",
+    "date": "2025-02-23",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 899,
+    "spark": [4, 1, 2, 1, 1, 3, 1]
+  },
+  {
+    "id": 419,
+    "transactionId": "TXN-2024-0419",
+    "date": "2025-02-22",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1561,
+    "spark": [1, 1, 1, 1, 5, 1, 1]
+  },
+  {
+    "id": 418,
+    "transactionId": "TXN-2024-0418",
+    "date": "2025-02-21",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7985,
+    "spark": [10, 6, 4, 10, 8, 7, 5]
+  },
+  {
+    "id": 417,
+    "transactionId": "TXN-2024-0417",
+    "date": "2025-02-20",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 594,
+    "spark": [2, 1, 1, 1, 1, 2, 3]
+  },
+  {
+    "id": 416,
+    "transactionId": "TXN-2024-0416",
+    "date": "2025-02-19",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1393,
+    "spark": [1, 1, 5, 2, 1, 1, 5]
+  },
+  {
+    "id": 415,
+    "transactionId": "TXN-2024-0415",
+    "date": "2025-02-18",
+    "title": "Stock Dividend",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 7406,
+    "spark": [6, 5, 11, 6, 8, 6, 9]
+  },
+  {
+    "id": 414,
+    "transactionId": "TXN-2024-0414",
+    "date": "2025-02-17",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3710,
+    "spark": [4, 2, 2, 4, 6, 7, 5]
+  },
+  {
+    "id": 413,
+    "transactionId": "TXN-2024-0413",
+    "date": "2025-02-16",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1568,
+    "spark": [4, 4, 1, 1, 1, 3, 1]
+  },
+  {
+    "id": 412,
+    "transactionId": "TXN-2024-0412",
+    "date": "2025-02-15",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 5627,
+    "spark": [5, 1, 9, 2, 5, 7, 7]
+  },
+  {
+    "id": 411,
+    "transactionId": "TXN-2024-0411",
+    "date": "2025-02-14",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2619,
+    "spark": [1, 1, 1, 1, 1, 1, 5]
+  },
+  {
+    "id": 410,
+    "transactionId": "TXN-2024-0410",
+    "date": "2025-02-13",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4665,
+    "spark": [1, 1, 8, 1, 4, 1, 4]
+  },
+  {
+    "id": 409,
+    "transactionId": "TXN-2024-0409",
+    "date": "2025-02-12",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 794,
+    "spark": [1, 1, 1, 4, 1, 1, 1]
+  },
+  {
+    "id": 408,
+    "transactionId": "TXN-2024-0408",
+    "date": "2025-02-11",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 645,
+    "spark": [4, 1, 2, 1, 1, 3, 1]
+  },
+  {
+    "id": 407,
+    "transactionId": "TXN-2024-0407",
+    "date": "2025-02-10",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 960,
+    "spark": [1, 3, 1, 1, 1, 2, 3]
+  },
+  {
+    "id": 406,
+    "transactionId": "TXN-2024-0406",
+    "date": "2025-02-09",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 744,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 405,
+    "transactionId": "TXN-2024-0405",
+    "date": "2025-02-08",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 5117,
+    "spark": [6, 3, 2, 5, 3, 3, 9]
+  },
+  {
+    "id": 404,
+    "transactionId": "TXN-2024-0404",
+    "date": "2025-02-07",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1899,
+    "spark": [1, 5, 2, 1, 1, 1, 1]
+  },
+  {
+    "id": 403,
+    "transactionId": "TXN-2024-0403",
+    "date": "2025-02-06",
+    "title": "Stock Dividend",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 5076,
+    "spark": [1, 7, 1, 8, 3, 6, 9]
+  },
+  {
+    "id": 402,
+    "transactionId": "TXN-2024-0402",
+    "date": "2025-02-05",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 1542,
+    "spark": [4, 1, 4, 2, 1, 1, 1]
+  },
+  {
+    "id": 401,
+    "transactionId": "TXN-2024-0401",
+    "date": "2025-02-04",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2694,
+    "spark": [5, 1, 1, 1, 4, 1, 1]
+  },
+  {
+    "id": 400,
+    "transactionId": "TXN-2024-0400",
+    "date": "2025-02-03",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 588,
+    "spark": [1, 1, 2, 1, 1, 3, 1]
+  },
+  {
+    "id": 399,
+    "transactionId": "TXN-2024-0399",
+    "date": "2025-02-02",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 84982,
+    "spark": [83, 80, 88, 79, 80, 82, 81]
+  },
+  {
+    "id": 398,
+    "transactionId": "TXN-2024-0398",
+    "date": "2025-02-01",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4094,
+    "spark": [2, 1, 6, 1, 8, 6, 1]
+  },
+  {
+    "id": 397,
+    "transactionId": "TXN-2024-0397",
+    "date": "2025-01-31",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 14960,
+    "spark": [14, 18, 9, 13, 13, 14, 14]
+  },
+  {
+    "id": 396,
+    "transactionId": "TXN-2024-0396",
+    "date": "2025-01-30",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7499,
+    "spark": [2, 9, 7, 3, 6, 8, 7]
+  },
+  {
+    "id": 395,
+    "transactionId": "TXN-2024-0395",
+    "date": "2025-01-29",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 177,
+    "spark": [4, 2, 4, 1, 1, 3, 4]
+  },
+  {
+    "id": 394,
+    "transactionId": "TXN-2024-0394",
+    "date": "2025-01-28",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 85903,
+    "spark": [80, 82, 88, 83, 86, 88, 80]
+  },
+  {
+    "id": 393,
+    "transactionId": "TXN-2024-0393",
+    "date": "2025-01-27",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 836,
+    "spark": [4, 2, 4, 1, 1, 4, 1]
+  },
+  {
+    "id": 392,
+    "transactionId": "TXN-2024-0392",
+    "date": "2025-01-26",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 21006,
+    "spark": [25, 16, 18, 20, 17, 21, 17]
+  },
+  {
+    "id": 391,
+    "transactionId": "TXN-2024-0391",
+    "date": "2025-01-25",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5276,
+    "spark": [6, 6, 1, 6, 4, 6, 6]
+  },
+  {
+    "id": 390,
+    "transactionId": "TXN-2024-0390",
+    "date": "2025-01-24",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7104,
+    "spark": [4, 4, 6, 10, 11, 8, 6]
+  },
+  {
+    "id": 389,
+    "transactionId": "TXN-2024-0389",
+    "date": "2025-01-23",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 4162,
+    "spark": [6, 1, 5, 6, 3, 8, 1]
+  },
+  {
+    "id": 388,
+    "transactionId": "TXN-2024-0388",
+    "date": "2025-01-22",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1355,
+    "spark": [3, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 387,
+    "transactionId": "TXN-2024-0387",
+    "date": "2025-01-21",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 10526,
+    "spark": [7, 14, 8, 6, 10, 7, 13]
+  },
+  {
+    "id": 386,
+    "transactionId": "TXN-2024-0386",
+    "date": "2025-01-20",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1863,
+    "spark": [5, 5, 4, 5, 2, 1, 1]
+  },
+  {
+    "id": 385,
+    "transactionId": "TXN-2024-0385",
+    "date": "2025-01-19",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 11868,
+    "spark": [14, 11, 9, 9, 7, 12, 15]
+  },
+  {
+    "id": 384,
+    "transactionId": "TXN-2024-0384",
+    "date": "2025-01-18",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1454,
+    "spark": [2, 1, 5, 3, 1, 3, 1]
+  },
+  {
+    "id": 383,
+    "transactionId": "TXN-2024-0383",
+    "date": "2025-01-17",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6035,
+    "spark": [5, 8, 4, 8, 5, 7, 4]
+  },
+  {
+    "id": 382,
+    "transactionId": "TXN-2024-0382",
+    "date": "2025-01-16",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1917,
+    "spark": [5, 1, 1, 4, 1, 1, 1]
+  },
+  {
+    "id": 381,
+    "transactionId": "TXN-2024-0381",
+    "date": "2025-01-15",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 3322,
+    "spark": [1, 1, 1, 1, 2, 1, 1]
+  },
+  {
+    "id": 380,
+    "transactionId": "TXN-2024-0380",
+    "date": "2025-01-14",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1170,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 379,
+    "transactionId": "TXN-2024-0379",
+    "date": "2025-01-13",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 22896,
+    "spark": [24, 22, 21, 20, 25, 25, 24]
+  },
+  {
+    "id": 378,
+    "transactionId": "TXN-2024-0378",
+    "date": "2025-01-12",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 321,
+    "spark": [3, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 377,
+    "transactionId": "TXN-2024-0377",
+    "date": "2025-01-11",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 29432,
+    "spark": [31, 26, 29, 32, 27, 32, 31]
+  },
+  {
+    "id": 376,
+    "transactionId": "TXN-2024-0376",
+    "date": "2025-01-10",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1025,
+    "spark": [1, 1, 5, 1, 3, 2, 1]
+  },
+  {
+    "id": 375,
+    "transactionId": "TXN-2024-0375",
+    "date": "2025-01-09",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1261,
+    "spark": [1, 5, 3, 1, 1, 4, 1]
+  },
+  {
+    "id": 374,
+    "transactionId": "TXN-2024-0374",
+    "date": "2025-01-08",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3868,
+    "spark": [1, 6, 3, 2, 1, 1, 1]
+  },
+  {
+    "id": 373,
+    "transactionId": "TXN-2024-0373",
+    "date": "2025-01-07",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 5589,
+    "spark": [6, 7, 7, 6, 1, 6, 5]
+  },
+  {
+    "id": 372,
+    "transactionId": "TXN-2024-0372",
+    "date": "2025-01-06",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 18517,
+    "spark": [13, 19, 17, 17, 20, 18, 14]
+  },
+  {
+    "id": 371,
+    "transactionId": "TXN-2024-0371",
+    "date": "2025-01-05",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2780,
+    "spark": [3, 1, 3, 1, 2, 1, 1]
+  },
+  {
+    "id": 370,
+    "transactionId": "TXN-2024-0370",
+    "date": "2025-01-04",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 24305,
+    "spark": [21, 23, 20, 19, 20, 22, 26]
+  },
+  {
+    "id": 369,
+    "transactionId": "TXN-2024-0369",
+    "date": "2025-01-03",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 14506,
+    "spark": [10, 9, 9, 14, 10, 14, 15]
+  },
+  {
+    "id": 368,
+    "transactionId": "TXN-2024-0368",
+    "date": "2025-01-02",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2254,
+    "spark": [1, 1, 6, 1, 5, 1, 1]
+  },
+  {
+    "id": 367,
+    "transactionId": "TXN-2024-0367",
+    "date": "2025-01-01",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 121,
+    "spark": [1, 2, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 366,
+    "transactionId": "TXN-2024-0366",
+    "date": "2024-12-31",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7437,
+    "spark": [5, 2, 3, 5, 9, 8, 8]
+  },
+  {
+    "id": 365,
+    "transactionId": "TXN-2024-0365",
+    "date": "2024-12-30",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5051,
+    "spark": [9, 3, 7, 4, 5, 9, 9]
+  },
+  {
+    "id": 364,
+    "transactionId": "TXN-2024-0364",
+    "date": "2024-12-29",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 827,
+    "spark": [1, 1, 1, 1, 1, 1, 2]
+  },
+  {
+    "id": 363,
+    "transactionId": "TXN-2024-0363",
+    "date": "2024-12-28",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1852,
+    "spark": [1, 3, 4, 1, 1, 1, 4]
+  },
+  {
+    "id": 362,
+    "transactionId": "TXN-2024-0362",
+    "date": "2024-12-27",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 2645,
+    "spark": [5, 1, 4, 2, 3, 1, 1]
+  },
+  {
+    "id": 361,
+    "transactionId": "TXN-2024-0361",
+    "date": "2024-12-26",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 5891,
+    "spark": [2, 8, 7, 1, 1, 7, 6]
+  },
+  {
+    "id": 360,
+    "transactionId": "TXN-2024-0360",
+    "date": "2024-12-25",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 17013,
+    "spark": [12, 14, 13, 21, 20, 17, 12]
+  },
+  {
+    "id": 359,
+    "transactionId": "TXN-2024-0359",
+    "date": "2024-12-24",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 295,
+    "spark": [1, 1, 3, 4, 1, 2, 1]
+  },
+  {
+    "id": 358,
+    "transactionId": "TXN-2024-0358",
+    "date": "2024-12-23",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 83098,
+    "spark": [86, 81, 80, 86, 82, 82, 85]
+  },
+  {
+    "id": 357,
+    "transactionId": "TXN-2024-0357",
+    "date": "2024-12-22",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1185,
+    "spark": [4, 1, 1, 3, 1, 5, 1]
+  },
+  {
+    "id": 356,
+    "transactionId": "TXN-2024-0356",
+    "date": "2024-12-21",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4834,
+    "spark": [1, 7, 3, 1, 5, 5, 1]
+  },
+  {
+    "id": 355,
+    "transactionId": "TXN-2024-0355",
+    "date": "2024-12-20",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 461,
+    "spark": [1, 1, 4, 2, 1, 4, 1]
+  },
+  {
+    "id": 354,
+    "transactionId": "TXN-2024-0354",
+    "date": "2024-12-19",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4370,
+    "spark": [1, 4, 4, 6, 7, 1, 1]
+  },
+  {
+    "id": 353,
+    "transactionId": "TXN-2024-0353",
+    "date": "2024-12-18",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6864,
+    "spark": [7, 10, 5, 6, 6, 10, 4]
+  },
+  {
+    "id": 352,
+    "transactionId": "TXN-2024-0352",
+    "date": "2024-12-17",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1087,
+    "spark": [2, 1, 1, 3, 1, 1, 5]
+  },
+  {
+    "id": 351,
+    "transactionId": "TXN-2024-0351",
+    "date": "2024-12-16",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4763,
+    "spark": [3, 1, 1, 2, 2, 8, 1]
+  },
+  {
+    "id": 350,
+    "transactionId": "TXN-2024-0350",
+    "date": "2024-12-15",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 90768,
+    "spark": [92, 85, 85, 94, 90, 92, 88]
+  },
+  {
+    "id": 349,
+    "transactionId": "TXN-2024-0349",
+    "date": "2024-12-14",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2610,
+    "spark": [1, 5, 6, 1, 2, 5, 6]
+  },
+  {
+    "id": 348,
+    "transactionId": "TXN-2024-0348",
+    "date": "2024-12-13",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 4935,
+    "spark": [2, 1, 1, 7, 3, 1, 4]
+  },
+  {
+    "id": 347,
+    "transactionId": "TXN-2024-0347",
+    "date": "2024-12-12",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 4160,
+    "spark": [1, 7, 6, 1, 1, 1, 7]
+  },
+  {
+    "id": 346,
+    "transactionId": "TXN-2024-0346",
+    "date": "2024-12-11",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 17865,
+    "spark": [17, 16, 15, 18, 14, 17, 21]
+  },
+  {
+    "id": 345,
+    "transactionId": "TXN-2024-0345",
+    "date": "2024-12-10",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2925,
+    "spark": [1, 1, 5, 3, 2, 1, 3]
+  },
+  {
+    "id": 344,
+    "transactionId": "TXN-2024-0344",
+    "date": "2024-12-09",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 841,
+    "spark": [1, 2, 4, 1, 1, 1, 1]
+  },
+  {
+    "id": 343,
+    "transactionId": "TXN-2024-0343",
+    "date": "2024-12-08",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3074,
+    "spark": [1, 6, 5, 1, 7, 5, 2]
+  },
+  {
+    "id": 342,
+    "transactionId": "TXN-2024-0342",
+    "date": "2024-12-07",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2925,
+    "spark": [6, 3, 1, 1, 1, 1, 3]
+  },
+  {
+    "id": 341,
+    "transactionId": "TXN-2024-0341",
+    "date": "2024-12-06",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 4187,
+    "spark": [1, 3, 8, 8, 1, 8, 1]
+  },
+  {
+    "id": 340,
+    "transactionId": "TXN-2024-0340",
+    "date": "2024-12-05",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 88032,
+    "spark": [91, 88, 91, 89, 88, 84, 91]
+  },
+  {
+    "id": 339,
+    "transactionId": "TXN-2024-0339",
+    "date": "2024-12-04",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3551,
+    "spark": [6, 3, 1, 6, 1, 1, 3]
+  },
+  {
+    "id": 338,
+    "transactionId": "TXN-2024-0338",
+    "date": "2024-12-03",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 898,
+    "spark": [3, 1, 1, 1, 2, 1, 1]
+  },
+  {
+    "id": 337,
+    "transactionId": "TXN-2024-0337",
+    "date": "2024-12-02",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 520,
+    "spark": [1, 4, 1, 1, 2, 3, 2]
+  },
+  {
+    "id": 336,
+    "transactionId": "TXN-2024-0336",
+    "date": "2024-12-01",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 15970,
+    "spark": [14, 14, 11, 15, 19, 10, 16]
+  },
+  {
+    "id": 335,
+    "transactionId": "TXN-2024-0335",
+    "date": "2024-11-30",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2360,
+    "spark": [1, 4, 1, 1, 6, 1, 1]
+  },
+  {
+    "id": 334,
+    "transactionId": "TXN-2024-0334",
+    "date": "2024-11-29",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2459,
+    "spark": [5, 1, 1, 4, 1, 6, 5]
+  },
+  {
+    "id": 333,
+    "transactionId": "TXN-2024-0333",
+    "date": "2024-11-28",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2136,
+    "spark": [1, 5, 1, 1, 1, 5, 6]
+  },
+  {
+    "id": 332,
+    "transactionId": "TXN-2024-0332",
+    "date": "2024-11-27",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 4979,
+    "spark": [1, 3, 5, 7, 4, 7, 1]
+  },
+  {
+    "id": 331,
+    "transactionId": "TXN-2024-0331",
+    "date": "2024-11-26",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 951,
+    "spark": [2, 1, 1, 1, 4, 1, 1]
+  },
+  {
+    "id": 330,
+    "transactionId": "TXN-2024-0330",
+    "date": "2024-11-25",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1159,
+    "spark": [1, 1, 2, 5, 1, 1, 1]
+  },
+  {
+    "id": 329,
+    "transactionId": "TXN-2024-0329",
+    "date": "2024-11-24",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1504,
+    "spark": [4, 1, 5, 1, 1, 1, 1]
+  },
+  {
+    "id": 328,
+    "transactionId": "TXN-2024-0328",
+    "date": "2024-11-23",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 77404,
+    "spark": [75, 73, 77, 74, 80, 76, 73]
+  },
+  {
+    "id": 327,
+    "transactionId": "TXN-2024-0327",
+    "date": "2024-11-22",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1148,
+    "spark": [1, 1, 4, 1, 1, 2, 1]
+  },
+  {
+    "id": 326,
+    "transactionId": "TXN-2024-0326",
+    "date": "2024-11-21",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2275,
+    "spark": [3, 6, 1, 1, 1, 6, 2]
+  },
+  {
+    "id": 325,
+    "transactionId": "TXN-2024-0325",
+    "date": "2024-11-20",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1519,
+    "spark": [1, 1, 3, 1, 1, 1, 1]
+  },
+  {
+    "id": 324,
+    "transactionId": "TXN-2024-0324",
+    "date": "2024-11-19",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 4009,
+    "spark": [4, 8, 3, 6, 1, 2, 7]
+  },
+  {
+    "id": 323,
+    "transactionId": "TXN-2024-0323",
+    "date": "2024-11-18",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2670,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 322,
+    "transactionId": "TXN-2024-0322",
+    "date": "2024-11-17",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 6461,
+    "spark": [2, 3, 6, 10, 2, 10, 5]
+  },
+  {
+    "id": 321,
+    "transactionId": "TXN-2024-0321",
+    "date": "2024-11-16",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 16153,
+    "spark": [12, 17, 19, 12, 19, 16, 17]
+  },
+  {
+    "id": 320,
+    "transactionId": "TXN-2024-0320",
+    "date": "2024-11-15",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2979,
+    "spark": [1, 5, 6, 6, 1, 3, 1]
+  },
+  {
+    "id": 319,
+    "transactionId": "TXN-2024-0319",
+    "date": "2024-11-14",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3599,
+    "spark": [6, 6, 1, 1, 1, 5, 5]
+  },
+  {
+    "id": 318,
+    "transactionId": "TXN-2024-0318",
+    "date": "2024-11-13",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2142,
+    "spark": [4, 1, 1, 5, 3, 1, 2]
+  },
+  {
+    "id": 317,
+    "transactionId": "TXN-2024-0317",
+    "date": "2024-11-12",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 11108,
+    "spark": [8, 10, 13, 14, 12, 9, 15]
+  },
+  {
+    "id": 316,
+    "transactionId": "TXN-2024-0316",
+    "date": "2024-11-11",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5111,
+    "spark": [1, 1, 9, 5, 9, 7, 4]
+  },
+  {
+    "id": 315,
+    "transactionId": "TXN-2024-0315",
+    "date": "2024-11-10",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 289,
+    "spark": [1, 4, 1, 1, 1, 3, 1]
+  },
+  {
+    "id": 314,
+    "transactionId": "TXN-2024-0314",
+    "date": "2024-11-09",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1017,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 313,
+    "transactionId": "TXN-2024-0313",
+    "date": "2024-11-08",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 3288,
+    "spark": [1, 1, 6, 1, 3, 7, 1]
+  },
+  {
+    "id": 312,
+    "transactionId": "TXN-2024-0312",
+    "date": "2024-11-07",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 912,
+    "spark": [1, 1, 1, 1, 1, 4, 4]
+  },
+  {
+    "id": 311,
+    "transactionId": "TXN-2024-0311",
+    "date": "2024-11-06",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 6419,
+    "spark": [3, 1, 1, 3, 9, 2, 6]
+  },
+  {
+    "id": 310,
+    "transactionId": "TXN-2024-0310",
+    "date": "2024-11-05",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 29215,
+    "spark": [30, 31, 29, 28, 27, 31, 25]
+  },
+  {
+    "id": 309,
+    "transactionId": "TXN-2024-0309",
+    "date": "2024-11-04",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1912,
+    "spark": [1, 1, 3, 3, 4, 3, 4]
+  },
+  {
+    "id": 308,
+    "transactionId": "TXN-2024-0308",
+    "date": "2024-11-03",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 688,
+    "spark": [1, 1, 1, 2, 2, 4, 4]
+  },
+  {
+    "id": 307,
+    "transactionId": "TXN-2024-0307",
+    "date": "2024-11-02",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7867,
+    "spark": [9, 10, 10, 5, 2, 3, 7]
+  },
+  {
+    "id": 306,
+    "transactionId": "TXN-2024-0306",
+    "date": "2024-11-01",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 6003,
+    "spark": [1, 8, 2, 8, 10, 3, 2]
+  },
+  {
+    "id": 305,
+    "transactionId": "TXN-2024-0305",
+    "date": "2024-10-31",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 92680,
+    "spark": [94, 90, 91, 87, 95, 88, 90]
+  },
+  {
+    "id": 304,
+    "transactionId": "TXN-2024-0304",
+    "date": "2024-10-30",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 3255,
+    "spark": [6, 5, 1, 4, 1, 1, 1]
+  },
+  {
+    "id": 303,
+    "transactionId": "TXN-2024-0303",
+    "date": "2024-10-29",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1363,
+    "spark": [3, 1, 1, 3, 1, 1, 2]
+  },
+  {
+    "id": 302,
+    "transactionId": "TXN-2024-0302",
+    "date": "2024-10-28",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 3840,
+    "spark": [4, 3, 1, 1, 4, 3, 1]
+  },
+  {
+    "id": 301,
+    "transactionId": "TXN-2024-0301",
+    "date": "2024-10-27",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2851,
+    "spark": [1, 1, 5, 1, 4, 4, 4]
+  },
+  {
+    "id": 300,
+    "transactionId": "TXN-2024-0300",
+    "date": "2024-10-26",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 23060,
+    "spark": [24, 20, 20, 18, 22, 24, 22]
+  },
+  {
+    "id": 299,
+    "transactionId": "TXN-2024-0299",
+    "date": "2024-10-25",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 14347,
+    "spark": [18, 11, 17, 10, 15, 17, 15]
+  },
+  {
+    "id": 298,
+    "transactionId": "TXN-2024-0298",
+    "date": "2024-10-24",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 744,
+    "spark": [1, 1, 4, 1, 1, 1, 2]
+  },
+  {
+    "id": 297,
+    "transactionId": "TXN-2024-0297",
+    "date": "2024-10-23",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 836,
+    "spark": [1, 1, 3, 1, 4, 1, 1]
+  },
+  {
+    "id": 296,
+    "transactionId": "TXN-2024-0296",
+    "date": "2024-10-22",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2575,
+    "spark": [3, 1, 5, 3, 1, 1, 1]
+  },
+  {
+    "id": 295,
+    "transactionId": "TXN-2024-0295",
+    "date": "2024-10-21",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2583,
+    "spark": [3, 1, 1, 1, 1, 5, 1]
+  },
+  {
+    "id": 294,
+    "transactionId": "TXN-2024-0294",
+    "date": "2024-10-20",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 11798,
+    "spark": [6, 12, 12, 7, 14, 6, 13]
+  },
+  {
+    "id": 293,
+    "transactionId": "TXN-2024-0293",
+    "date": "2024-10-19",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1465,
+    "spark": [1, 2, 4, 2, 5, 4, 4]
+  },
+  {
+    "id": 292,
+    "transactionId": "TXN-2024-0292",
+    "date": "2024-10-18",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 11066,
+    "spark": [13, 7, 13, 15, 7, 13, 6]
+  },
+  {
+    "id": 291,
+    "transactionId": "TXN-2024-0291",
+    "date": "2024-10-17",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2901,
+    "spark": [1, 5, 1, 1, 1, 1, 4]
+  },
+  {
+    "id": 290,
+    "transactionId": "TXN-2024-0290",
+    "date": "2024-10-16",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2736,
+    "spark": [2, 2, 6, 5, 1, 3, 1]
+  },
+  {
+    "id": 289,
+    "transactionId": "TXN-2024-0289",
+    "date": "2024-10-15",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 99763,
+    "spark": [97, 101, 96, 98, 95, 95, 98]
+  },
+  {
+    "id": 288,
+    "transactionId": "TXN-2024-0288",
+    "date": "2024-10-14",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2414,
+    "spark": [3, 1, 1, 4, 1, 2, 2]
+  },
+  {
+    "id": 287,
+    "transactionId": "TXN-2024-0287",
+    "date": "2024-10-13",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1998,
+    "spark": [1, 1, 1, 1, 3, 1, 1]
+  },
+  {
+    "id": 286,
+    "transactionId": "TXN-2024-0286",
+    "date": "2024-10-12",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 661,
+    "spark": [1, 1, 1, 1, 4, 1, 1]
+  },
+  {
+    "id": 285,
+    "transactionId": "TXN-2024-0285",
+    "date": "2024-10-11",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2109,
+    "spark": [4, 2, 1, 1, 1, 1, 5]
+  },
+  {
+    "id": 284,
+    "transactionId": "TXN-2024-0284",
+    "date": "2024-10-10",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 14233,
+    "spark": [11, 11, 10, 17, 10, 16, 16]
+  },
+  {
+    "id": 283,
+    "transactionId": "TXN-2024-0283",
+    "date": "2024-10-09",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 744,
+    "spark": [1, 1, 2, 1, 4, 1, 1]
+  },
+  {
+    "id": 282,
+    "transactionId": "TXN-2024-0282",
+    "date": "2024-10-08",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 540,
+    "spark": [3, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 281,
+    "transactionId": "TXN-2024-0281",
+    "date": "2024-10-07",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2577,
+    "spark": [1, 1, 1, 1, 3, 1, 5]
+  },
+  {
+    "id": 280,
+    "transactionId": "TXN-2024-0280",
+    "date": "2024-10-06",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1166,
+    "spark": [1, 1, 4, 3, 5, 1, 4]
+  },
+  {
+    "id": 279,
+    "transactionId": "TXN-2024-0279",
+    "date": "2024-10-05",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2537,
+    "spark": [1, 1, 5, 1, 1, 1, 5]
+  },
+  {
+    "id": 278,
+    "transactionId": "TXN-2024-0278",
+    "date": "2024-10-04",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 24025,
+    "spark": [23, 24, 27, 23, 24, 19, 23]
+  },
+  {
+    "id": 277,
+    "transactionId": "TXN-2024-0277",
+    "date": "2024-10-03",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 29271,
+    "spark": [31, 33, 27, 29, 31, 28, 30]
+  },
+  {
+    "id": 276,
+    "transactionId": "TXN-2024-0276",
+    "date": "2024-10-02",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 27313,
+    "spark": [30, 26, 27, 28, 23, 22, 25]
+  },
+  {
+    "id": 275,
+    "transactionId": "TXN-2024-0275",
+    "date": "2024-10-01",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 669,
+    "spark": [1, 3, 1, 1, 1, 3, 1]
+  },
+  {
+    "id": 274,
+    "transactionId": "TXN-2024-0274",
+    "date": "2024-09-30",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 8981,
+    "spark": [6, 3, 4, 5, 12, 7, 7]
+  },
+  {
+    "id": 273,
+    "transactionId": "TXN-2024-0273",
+    "date": "2024-09-29",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1317,
+    "spark": [1, 2, 3, 1, 2, 1, 1]
+  },
+  {
+    "id": 272,
+    "transactionId": "TXN-2024-0272",
+    "date": "2024-09-28",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 731,
+    "spark": [2, 1, 4, 1, 1, 1, 1]
+  },
+  {
+    "id": 271,
+    "transactionId": "TXN-2024-0271",
+    "date": "2024-09-27",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 646,
+    "spark": [1, 1, 1, 1, 1, 1, 2]
+  },
+  {
+    "id": 270,
+    "transactionId": "TXN-2024-0270",
+    "date": "2024-09-26",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1233,
+    "spark": [1, 5, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 269,
+    "transactionId": "TXN-2024-0269",
+    "date": "2024-09-25",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 72269,
+    "spark": [72, 71, 68, 72, 67, 74, 72]
+  },
+  {
+    "id": 268,
+    "transactionId": "TXN-2024-0268",
+    "date": "2024-09-24",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 605,
+    "spark": [3, 1, 1, 3, 1, 1, 1]
+  },
+  {
+    "id": 267,
+    "transactionId": "TXN-2024-0267",
+    "date": "2024-09-23",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2504,
+    "spark": [2, 2, 2, 1, 1, 3, 1]
+  },
+  {
+    "id": 266,
+    "transactionId": "TXN-2024-0266",
+    "date": "2024-09-22",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2338,
+    "spark": [2, 5, 3, 2, 3, 6, 1]
+  },
+  {
+    "id": 265,
+    "transactionId": "TXN-2024-0265",
+    "date": "2024-09-21",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1252,
+    "spark": [3, 1, 2, 2, 1, 4, 1]
+  },
+  {
+    "id": 264,
+    "transactionId": "TXN-2024-0264",
+    "date": "2024-09-20",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 7811,
+    "spark": [11, 7, 8, 9, 4, 2, 5]
+  },
+  {
+    "id": 263,
+    "transactionId": "TXN-2024-0263",
+    "date": "2024-09-19",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 6978,
+    "spark": [10, 9, 9, 7, 3, 2, 2]
+  },
+  {
+    "id": 262,
+    "transactionId": "TXN-2024-0262",
+    "date": "2024-09-18",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5547,
+    "spark": [9, 8, 1, 9, 4, 2, 5]
+  },
+  {
+    "id": 261,
+    "transactionId": "TXN-2024-0261",
+    "date": "2024-09-17",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 641,
+    "spark": [1, 1, 1, 1, 2, 3, 4]
+  },
+  {
+    "id": 260,
+    "transactionId": "TXN-2024-0260",
+    "date": "2024-09-16",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 833,
+    "spark": [2, 3, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 259,
+    "transactionId": "TXN-2024-0259",
+    "date": "2024-09-15",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 72072,
+    "spark": [72, 76, 75, 75, 69, 69, 72]
+  },
+  {
+    "id": 258,
+    "transactionId": "TXN-2024-0258",
+    "date": "2024-09-14",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1989,
+    "spark": [5, 3, 1, 1, 4, 3, 3]
+  },
+  {
+    "id": 257,
+    "transactionId": "TXN-2024-0257",
+    "date": "2024-09-13",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 7129,
+    "spark": [5, 10, 8, 10, 7, 9, 11]
+  },
+  {
+    "id": 256,
+    "transactionId": "TXN-2024-0256",
+    "date": "2024-09-12",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 9661,
+    "spark": [10, 6, 7, 10, 4, 10, 12]
+  },
+  {
+    "id": 255,
+    "transactionId": "TXN-2024-0255",
+    "date": "2024-09-11",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2842,
+    "spark": [1, 1, 2, 3, 1, 1, 4]
+  },
+  {
+    "id": 254,
+    "transactionId": "TXN-2024-0254",
+    "date": "2024-09-10",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1722,
+    "spark": [1, 4, 3, 1, 3, 3, 2]
+  },
+  {
+    "id": 253,
+    "transactionId": "TXN-2024-0253",
+    "date": "2024-09-09",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 2371,
+    "spark": [1, 6, 1, 1, 5, 5, 2]
+  },
+  {
+    "id": 252,
+    "transactionId": "TXN-2024-0252",
+    "date": "2024-09-08",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2944,
+    "spark": [3, 4, 6, 1, 6, 1, 6]
+  },
+  {
+    "id": 251,
+    "transactionId": "TXN-2024-0251",
+    "date": "2024-09-07",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 15470,
+    "spark": [18, 16, 19, 17, 16, 15, 11]
+  },
+  {
+    "id": 250,
+    "transactionId": "TXN-2024-0250",
+    "date": "2024-09-06",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 3742,
+    "spark": [1, 6, 3, 6, 7, 5, 1]
+  },
+  {
+    "id": 249,
+    "transactionId": "TXN-2024-0249",
+    "date": "2024-09-05",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5567,
+    "spark": [9, 1, 2, 8, 7, 5, 5]
+  },
+  {
+    "id": 248,
+    "transactionId": "TXN-2024-0248",
+    "date": "2024-09-04",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1030,
+    "spark": [1, 1, 2, 1, 4, 1, 1]
+  },
+  {
+    "id": 247,
+    "transactionId": "TXN-2024-0247",
+    "date": "2024-09-03",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1883,
+    "spark": [1, 2, 1, 1, 2, 2, 1]
+  },
+  {
+    "id": 246,
+    "transactionId": "TXN-2024-0246",
+    "date": "2024-09-02",
+    "title": "Stock Dividend",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 4795,
+    "spark": [7, 1, 8, 7, 2, 1, 7]
+  },
+  {
+    "id": 245,
+    "transactionId": "TXN-2024-0245",
+    "date": "2024-09-01",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2950,
+    "spark": [5, 1, 1, 2, 1, 1, 6]
+  },
+  {
+    "id": 244,
+    "transactionId": "TXN-2024-0244",
+    "date": "2024-08-31",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 28149,
+    "spark": [23, 25, 27, 25, 27, 24, 29]
+  },
+  {
+    "id": 243,
+    "transactionId": "TXN-2024-0243",
+    "date": "2024-08-30",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 21589,
+    "spark": [17, 20, 17, 19, 21, 16, 25]
+  },
+  {
+    "id": 242,
+    "transactionId": "TXN-2024-0242",
+    "date": "2024-08-29",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 19337,
+    "spark": [16, 17, 15, 15, 14, 14, 14]
+  },
+  {
+    "id": 241,
+    "transactionId": "TXN-2024-0241",
+    "date": "2024-08-28",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 11921,
+    "spark": [6, 6, 12, 7, 10, 9, 10]
+  },
+  {
+    "id": 240,
+    "transactionId": "TXN-2024-0240",
+    "date": "2024-08-27",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 5924,
+    "spark": [7, 4, 5, 1, 3, 1, 6]
+  },
+  {
+    "id": 239,
+    "transactionId": "TXN-2024-0239",
+    "date": "2024-08-26",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1688,
+    "spark": [1, 4, 1, 1, 1, 1, 3]
+  },
+  {
+    "id": 238,
+    "transactionId": "TXN-2024-0238",
+    "date": "2024-08-25",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1869,
+    "spark": [3, 2, 1, 3, 1, 5, 1]
+  },
+  {
+    "id": 237,
+    "transactionId": "TXN-2024-0237",
+    "date": "2024-08-24",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4903,
+    "spark": [6, 8, 5, 1, 1, 3, 1]
+  },
+  {
+    "id": 236,
+    "transactionId": "TXN-2024-0236",
+    "date": "2024-08-23",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 98614,
+    "spark": [98, 99, 99, 93, 93, 95, 94]
+  },
+  {
+    "id": 235,
+    "transactionId": "TXN-2024-0235",
+    "date": "2024-08-22",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2328,
+    "spark": [1, 6, 1, 2, 1, 3, 2]
+  },
+  {
+    "id": 234,
+    "transactionId": "TXN-2024-0234",
+    "date": "2024-08-21",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 14967,
+    "spark": [10, 15, 9, 9, 16, 15, 18]
+  },
+  {
+    "id": 233,
+    "transactionId": "TXN-2024-0233",
+    "date": "2024-08-20",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1631,
+    "spark": [3, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 232,
+    "transactionId": "TXN-2024-0232",
+    "date": "2024-08-19",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1099,
+    "spark": [1, 3, 1, 3, 2, 2, 1]
+  },
+  {
+    "id": 231,
+    "transactionId": "TXN-2024-0231",
+    "date": "2024-08-18",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2210,
+    "spark": [1, 1, 3, 1, 1, 1, 1]
+  },
+  {
+    "id": 230,
+    "transactionId": "TXN-2024-0230",
+    "date": "2024-08-17",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 986,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 229,
+    "transactionId": "TXN-2024-0229",
+    "date": "2024-08-16",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7932,
+    "spark": [7, 6, 9, 3, 6, 6, 6]
+  },
+  {
+    "id": 228,
+    "transactionId": "TXN-2024-0228",
+    "date": "2024-08-15",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 82514,
+    "spark": [78, 85, 77, 84, 78, 81, 78]
+  },
+  {
+    "id": 227,
+    "transactionId": "TXN-2024-0227",
+    "date": "2024-08-14",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 19445,
+    "spark": [22, 18, 14, 16, 23, 20, 15]
+  },
+  {
+    "id": 226,
+    "transactionId": "TXN-2024-0226",
+    "date": "2024-08-13",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2844,
+    "spark": [4, 1, 1, 1, 2, 1, 1]
+  },
+  {
+    "id": 225,
+    "transactionId": "TXN-2024-0225",
+    "date": "2024-08-12",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 80668,
+    "spark": [84, 83, 77, 84, 77, 82, 79]
+  },
+  {
+    "id": 224,
+    "transactionId": "TXN-2024-0224",
+    "date": "2024-08-11",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 97660,
+    "spark": [98, 98, 95, 92, 99, 100, 99]
+  },
+  {
+    "id": 223,
+    "transactionId": "TXN-2024-0223",
+    "date": "2024-08-10",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6861,
+    "spark": [1, 6, 4, 8, 8, 1, 7]
+  },
+  {
+    "id": 222,
+    "transactionId": "TXN-2024-0222",
+    "date": "2024-08-09",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 560,
+    "spark": [1, 1, 3, 1, 1, 1, 1]
+  },
+  {
+    "id": 221,
+    "transactionId": "TXN-2024-0221",
+    "date": "2024-08-08",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 9249,
+    "spark": [5, 12, 8, 5, 10, 10, 11]
+  },
+  {
+    "id": 220,
+    "transactionId": "TXN-2024-0220",
+    "date": "2024-08-07",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 929,
+    "spark": [4, 1, 1, 4, 4, 1, 1]
+  },
+  {
+    "id": 219,
+    "transactionId": "TXN-2024-0219",
+    "date": "2024-08-06",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 5693,
+    "spark": [9, 1, 2, 1, 1, 3, 8]
+  },
+  {
+    "id": 218,
+    "transactionId": "TXN-2024-0218",
+    "date": "2024-08-05",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 29889,
+    "spark": [32, 26, 33, 26, 30, 26, 27]
+  },
+  {
+    "id": 217,
+    "transactionId": "TXN-2024-0217",
+    "date": "2024-08-04",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 23845,
+    "spark": [21, 27, 27, 21, 18, 23, 24]
+  },
+  {
+    "id": 216,
+    "transactionId": "TXN-2024-0216",
+    "date": "2024-08-03",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 9658,
+    "spark": [8, 13, 6, 6, 10, 11, 8]
+  },
+  {
+    "id": 215,
+    "transactionId": "TXN-2024-0215",
+    "date": "2024-08-02",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5637,
+    "spark": [7, 6, 8, 1, 9, 2, 9]
+  },
+  {
+    "id": 214,
+    "transactionId": "TXN-2024-0214",
+    "date": "2024-08-01",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 6592,
+    "spark": [10, 5, 10, 6, 6, 5, 8]
+  },
+  {
+    "id": 213,
+    "transactionId": "TXN-2024-0213",
+    "date": "2024-07-31",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 23494,
+    "spark": [26, 22, 27, 26, 20, 27, 20]
+  },
+  {
+    "id": 212,
+    "transactionId": "TXN-2024-0212",
+    "date": "2024-07-30",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 77767,
+    "spark": [75, 79, 78, 75, 81, 75, 74]
+  },
+  {
+    "id": 211,
+    "transactionId": "TXN-2024-0211",
+    "date": "2024-07-29",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1474,
+    "spark": [1, 1, 1, 2, 1, 1, 1]
+  },
+  {
+    "id": 210,
+    "transactionId": "TXN-2024-0210",
+    "date": "2024-07-28",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4388,
+    "spark": [8, 1, 1, 8, 1, 6, 2]
+  },
+  {
+    "id": 209,
+    "transactionId": "TXN-2024-0209",
+    "date": "2024-07-27",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2860,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 208,
+    "transactionId": "TXN-2024-0208",
+    "date": "2024-07-26",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 540,
+    "spark": [1, 1, 4, 1, 1, 1, 1]
+  },
+  {
+    "id": 207,
+    "transactionId": "TXN-2024-0207",
+    "date": "2024-07-25",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 6146,
+    "spark": [9, 3, 2, 10, 1, 10, 6]
+  },
+  {
+    "id": 206,
+    "transactionId": "TXN-2024-0206",
+    "date": "2024-07-24",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1037,
+    "spark": [4, 1, 1, 5, 1, 2, 5]
+  },
+  {
+    "id": 205,
+    "transactionId": "TXN-2024-0205",
+    "date": "2024-07-23",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2047,
+    "spark": [3, 6, 3, 1, 4, 1, 1]
+  },
+  {
+    "id": 204,
+    "transactionId": "TXN-2024-0204",
+    "date": "2024-07-22",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2726,
+    "spark": [3, 1, 2, 1, 2, 1, 1]
+  },
+  {
+    "id": 203,
+    "transactionId": "TXN-2024-0203",
+    "date": "2024-07-21",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 4541,
+    "spark": [6, 1, 3, 5, 1, 2, 1]
+  },
+  {
+    "id": 202,
+    "transactionId": "TXN-2024-0202",
+    "date": "2024-07-20",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 28271,
+    "spark": [25, 29, 24, 27, 28, 30, 32]
+  },
+  {
+    "id": 201,
+    "transactionId": "TXN-2024-0201",
+    "date": "2024-07-19",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 16716,
+    "spark": [15, 16, 20, 14, 16, 16, 12]
+  },
+  {
+    "id": 200,
+    "transactionId": "TXN-2024-0200",
+    "date": "2024-07-18",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2051,
+    "spark": [1, 3, 3, 3, 1, 3, 1]
+  },
+  {
+    "id": 199,
+    "transactionId": "TXN-2024-0199",
+    "date": "2024-07-17",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 232,
+    "spark": [1, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 198,
+    "transactionId": "TXN-2024-0198",
+    "date": "2024-07-16",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 10338,
+    "spark": [12, 12, 12, 10, 12, 13, 12]
+  },
+  {
+    "id": 197,
+    "transactionId": "TXN-2024-0197",
+    "date": "2024-07-15",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 773,
+    "spark": [1, 2, 1, 1, 1, 1, 2]
+  },
+  {
+    "id": 196,
+    "transactionId": "TXN-2024-0196",
+    "date": "2024-07-14",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 3302,
+    "spark": [1, 4, 6, 3, 6, 6, 1]
+  },
+  {
+    "id": 195,
+    "transactionId": "TXN-2024-0195",
+    "date": "2024-07-13",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 12528,
+    "spark": [10, 9, 12, 16, 11, 16, 9]
+  },
+  {
+    "id": 194,
+    "transactionId": "TXN-2024-0194",
+    "date": "2024-07-12",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 7597,
+    "spark": [2, 8, 2, 10, 2, 2, 10]
+  },
+  {
+    "id": 193,
+    "transactionId": "TXN-2024-0193",
+    "date": "2024-07-11",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 27271,
+    "spark": [30, 25, 27, 29, 30, 25, 24]
+  },
+  {
+    "id": 192,
+    "transactionId": "TXN-2024-0192",
+    "date": "2024-07-10",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1811,
+    "spark": [1, 1, 1, 4, 1, 1, 1]
+  },
+  {
+    "id": 191,
+    "transactionId": "TXN-2024-0191",
+    "date": "2024-07-09",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6719,
+    "spark": [6, 4, 2, 1, 7, 8, 3]
+  },
+  {
+    "id": 190,
+    "transactionId": "TXN-2024-0190",
+    "date": "2024-07-08",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 16735,
+    "spark": [11, 18, 12, 15, 18, 12, 11]
+  },
+  {
+    "id": 189,
+    "transactionId": "TXN-2024-0189",
+    "date": "2024-07-07",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 4519,
+    "spark": [6, 1, 1, 6, 2, 1, 1]
+  },
+  {
+    "id": 188,
+    "transactionId": "TXN-2024-0188",
+    "date": "2024-07-06",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 460,
+    "spark": [1, 1, 1, 3, 1, 3, 1]
+  },
+  {
+    "id": 187,
+    "transactionId": "TXN-2024-0187",
+    "date": "2024-07-05",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 3561,
+    "spark": [1, 2, 4, 1, 7, 1, 3]
+  },
+  {
+    "id": 186,
+    "transactionId": "TXN-2024-0186",
+    "date": "2024-07-04",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2457,
+    "spark": [5, 1, 1, 5, 6, 3, 3]
+  },
+  {
+    "id": 185,
+    "transactionId": "TXN-2024-0185",
+    "date": "2024-07-03",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1248,
+    "spark": [1, 1, 1, 1, 4, 2, 1]
+  },
+  {
+    "id": 184,
+    "transactionId": "TXN-2024-0184",
+    "date": "2024-07-02",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1142,
+    "spark": [1, 1, 3, 1, 5, 1, 1]
+  },
+  {
+    "id": 183,
+    "transactionId": "TXN-2024-0183",
+    "date": "2024-07-01",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 1093,
+    "spark": [1, 1, 1, 3, 3, 3, 1]
+  },
+  {
+    "id": 182,
+    "transactionId": "TXN-2024-0182",
+    "date": "2024-06-30",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 2210,
+    "spark": [1, 3, 6, 1, 3, 1, 5]
+  },
+  {
+    "id": 181,
+    "transactionId": "TXN-2024-0181",
+    "date": "2024-06-29",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1164,
+    "spark": [1, 4, 5, 5, 1, 1, 5]
+  },
+  {
+    "id": 180,
+    "transactionId": "TXN-2024-0180",
+    "date": "2024-06-28",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1419,
+    "spark": [4, 2, 4, 1, 2, 4, 1]
+  },
+  {
+    "id": 179,
+    "transactionId": "TXN-2024-0179",
+    "date": "2024-06-27",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 86498,
+    "spark": [87, 88, 84, 81, 84, 83, 83]
+  },
+  {
+    "id": 178,
+    "transactionId": "TXN-2024-0178",
+    "date": "2024-06-26",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 22013,
+    "spark": [23, 26, 19, 25, 25, 20, 25]
+  },
+  {
+    "id": 177,
+    "transactionId": "TXN-2024-0177",
+    "date": "2024-06-25",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7179,
+    "spark": [2, 10, 9, 7, 10, 8, 6]
+  },
+  {
+    "id": 176,
+    "transactionId": "TXN-2024-0176",
+    "date": "2024-06-24",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 694,
+    "spark": [1, 2, 1, 1, 1, 3, 4]
+  },
+  {
+    "id": 175,
+    "transactionId": "TXN-2024-0175",
+    "date": "2024-06-23",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 16772,
+    "spark": [11, 16, 19, 19, 20, 13, 14]
+  },
+  {
+    "id": 174,
+    "transactionId": "TXN-2024-0174",
+    "date": "2024-06-22",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2949,
+    "spark": [1, 1, 4, 1, 4, 1, 4]
+  },
+  {
+    "id": 173,
+    "transactionId": "TXN-2024-0173",
+    "date": "2024-06-21",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2316,
+    "spark": [4, 3, 1, 3, 1, 5, 1]
+  },
+  {
+    "id": 172,
+    "transactionId": "TXN-2024-0172",
+    "date": "2024-06-20",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1116,
+    "spark": [1, 2, 2, 4, 2, 5, 2]
+  },
+  {
+    "id": 171,
+    "transactionId": "TXN-2024-0171",
+    "date": "2024-06-19",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 1931,
+    "spark": [5, 1, 5, 1, 2, 1, 3]
+  },
+  {
+    "id": 170,
+    "transactionId": "TXN-2024-0170",
+    "date": "2024-06-18",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 696,
+    "spark": [1, 1, 1, 2, 4, 1, 4]
+  },
+  {
+    "id": 169,
+    "transactionId": "TXN-2024-0169",
+    "date": "2024-06-17",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3643,
+    "spark": [3, 1, 7, 1, 2, 3, 6]
+  },
+  {
+    "id": 168,
+    "transactionId": "TXN-2024-0168",
+    "date": "2024-06-16",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1646,
+    "spark": [4, 1, 1, 1, 1, 3, 1]
+  },
+  {
+    "id": 167,
+    "transactionId": "TXN-2024-0167",
+    "date": "2024-06-15",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 5262,
+    "spark": [1, 4, 5, 7, 9, 7, 1]
+  },
+  {
+    "id": 166,
+    "transactionId": "TXN-2024-0166",
+    "date": "2024-06-14",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2625,
+    "spark": [1, 1, 3, 5, 1, 1, 3]
+  },
+  {
+    "id": 165,
+    "transactionId": "TXN-2024-0165",
+    "date": "2024-06-13",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1440,
+    "spark": [1, 1, 5, 3, 5, 1, 1]
+  },
+  {
+    "id": 164,
+    "transactionId": "TXN-2024-0164",
+    "date": "2024-06-12",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 5664,
+    "spark": [1, 1, 8, 6, 6, 3, 1]
+  },
+  {
+    "id": 163,
+    "transactionId": "TXN-2024-0163",
+    "date": "2024-06-11",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7476,
+    "spark": [5, 10, 10, 8, 3, 2, 10]
+  },
+  {
+    "id": 162,
+    "transactionId": "TXN-2024-0162",
+    "date": "2024-06-10",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2731,
+    "spark": [4, 6, 5, 2, 4, 1, 2]
+  },
+  {
+    "id": 161,
+    "transactionId": "TXN-2024-0161",
+    "date": "2024-06-09",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 99059,
+    "spark": [98, 96, 99, 94, 102, 101, 97]
+  },
+  {
+    "id": 160,
+    "transactionId": "TXN-2024-0160",
+    "date": "2024-06-08",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 394,
+    "spark": [1, 1, 1, 1, 4, 4, 1]
+  },
+  {
+    "id": 159,
+    "transactionId": "TXN-2024-0159",
+    "date": "2024-06-07",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 1946,
+    "spark": [4, 2, 1, 1, 1, 3, 1]
+  },
+  {
+    "id": 158,
+    "transactionId": "TXN-2024-0158",
+    "date": "2024-06-06",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1248,
+    "spark": [5, 1, 5, 1, 1, 4, 1]
+  },
+  {
+    "id": 157,
+    "transactionId": "TXN-2024-0157",
+    "date": "2024-06-05",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 23574,
+    "spark": [25, 20, 27, 25, 23, 24, 26]
+  },
+  {
+    "id": 156,
+    "transactionId": "TXN-2024-0156",
+    "date": "2024-06-04",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1275,
+    "spark": [1, 1, 5, 1, 3, 1, 1]
+  },
+  {
+    "id": 155,
+    "transactionId": "TXN-2024-0155",
+    "date": "2024-06-03",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 24883,
+    "spark": [26, 20, 19, 23, 21, 25, 23]
+  },
+  {
+    "id": 154,
+    "transactionId": "TXN-2024-0154",
+    "date": "2024-06-02",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 1203,
+    "spark": [1, 1, 1, 1, 5, 3, 1]
+  },
+  {
+    "id": 153,
+    "transactionId": "TXN-2024-0153",
+    "date": "2024-06-01",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 15213,
+    "spark": [16, 11, 10, 14, 17, 19, 18]
+  },
+  {
+    "id": 152,
+    "transactionId": "TXN-2024-0152",
+    "date": "2024-05-31",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 3750,
+    "spark": [2, 1, 6, 1, 6, 7, 1]
+  },
+  {
+    "id": 151,
+    "transactionId": "TXN-2024-0151",
+    "date": "2024-05-30",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2416,
+    "spark": [1, 1, 1, 2, 3, 2, 4]
+  },
+  {
+    "id": 150,
+    "transactionId": "TXN-2024-0150",
+    "date": "2024-05-29",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5866,
+    "spark": [9, 7, 5, 9, 7, 4, 2]
+  },
+  {
+    "id": 149,
+    "transactionId": "TXN-2024-0149",
+    "date": "2024-05-28",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1298,
+    "spark": [1, 1, 1, 1, 1, 5, 1]
+  },
+  {
+    "id": 148,
+    "transactionId": "TXN-2024-0148",
+    "date": "2024-05-27",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 21830,
+    "spark": [23, 25, 22, 22, 23, 24, 16]
+  },
+  {
+    "id": 147,
+    "transactionId": "TXN-2024-0147",
+    "date": "2024-05-26",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 974,
+    "spark": [2, 1, 1, 4, 1, 1, 3]
+  },
+  {
+    "id": 146,
+    "transactionId": "TXN-2024-0146",
+    "date": "2024-05-25",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1163,
+    "spark": [1, 5, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 145,
+    "transactionId": "TXN-2024-0145",
+    "date": "2024-05-24",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1285,
+    "spark": [1, 4, 1, 1, 5, 1, 3]
+  },
+  {
+    "id": 144,
+    "transactionId": "TXN-2024-0144",
+    "date": "2024-05-23",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 16620,
+    "spark": [12, 15, 20, 16, 11, 18, 19]
+  },
+  {
+    "id": 143,
+    "transactionId": "TXN-2024-0143",
+    "date": "2024-05-22",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 19507,
+    "spark": [20, 19, 23, 16, 16, 17, 21]
+  },
+  {
+    "id": 142,
+    "transactionId": "TXN-2024-0142",
+    "date": "2024-05-21",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 1244,
+    "spark": [1, 1, 5, 1, 1, 1, 2]
+  },
+  {
+    "id": 141,
+    "transactionId": "TXN-2024-0141",
+    "date": "2024-05-20",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2660,
+    "spark": [1, 1, 1, 3, 1, 1, 1]
+  },
+  {
+    "id": 140,
+    "transactionId": "TXN-2024-0140",
+    "date": "2024-05-19",
+    "title": "Stock Dividend",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 2869,
+    "spark": [1, 1, 2, 5, 1, 5, 1]
+  },
+  {
+    "id": 139,
+    "transactionId": "TXN-2024-0139",
+    "date": "2024-05-18",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2458,
+    "spark": [1, 4, 1, 5, 1, 1, 1]
+  },
+  {
+    "id": 138,
+    "transactionId": "TXN-2024-0138",
+    "date": "2024-05-17",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4987,
+    "spark": [4, 5, 4, 1, 1, 1, 1]
+  },
+  {
+    "id": 137,
+    "transactionId": "TXN-2024-0137",
+    "date": "2024-05-16",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4393,
+    "spark": [1, 3, 3, 1, 1, 5, 2]
+  },
+  {
+    "id": 136,
+    "transactionId": "TXN-2024-0136",
+    "date": "2024-05-15",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1846,
+    "spark": [3, 1, 1, 1, 2, 4, 1]
+  },
+  {
+    "id": 135,
+    "transactionId": "TXN-2024-0135",
+    "date": "2024-05-14",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 936,
+    "spark": [1, 4, 1, 2, 3, 1, 4]
+  },
+  {
+    "id": 134,
+    "transactionId": "TXN-2024-0134",
+    "date": "2024-05-13",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 84032,
+    "spark": [84, 88, 85, 79, 85, 79, 82]
+  },
+  {
+    "id": 133,
+    "transactionId": "TXN-2024-0133",
+    "date": "2024-05-12",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 2694,
+    "spark": [4, 1, 6, 1, 1, 1, 1]
+  },
+  {
+    "id": 132,
+    "transactionId": "TXN-2024-0132",
+    "date": "2024-05-11",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 20431,
+    "spark": [20, 23, 22, 23, 22, 21, 16]
+  },
+  {
+    "id": 131,
+    "transactionId": "TXN-2024-0131",
+    "date": "2024-05-10",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2789,
+    "spark": [1, 1, 1, 1, 2, 1, 1]
+  },
+  {
+    "id": 130,
+    "transactionId": "TXN-2024-0130",
+    "date": "2024-05-09",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 7686,
+    "spark": [5, 10, 4, 3, 9, 11, 6]
+  },
+  {
+    "id": 129,
+    "transactionId": "TXN-2024-0129",
+    "date": "2024-05-08",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 73483,
+    "spark": [69, 70, 68, 72, 73, 70, 70]
+  },
+  {
+    "id": 128,
+    "transactionId": "TXN-2024-0128",
+    "date": "2024-05-07",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 766,
+    "spark": [3, 1, 1, 1, 1, 1, 2]
+  },
+  {
+    "id": 127,
+    "transactionId": "TXN-2024-0127",
+    "date": "2024-05-06",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6251,
+    "spark": [9, 4, 3, 10, 5, 2, 5]
+  },
+  {
+    "id": 126,
+    "transactionId": "TXN-2024-0126",
+    "date": "2024-05-05",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7195,
+    "spark": [10, 3, 4, 7, 10, 6, 4]
+  },
+  {
+    "id": 125,
+    "transactionId": "TXN-2024-0125",
+    "date": "2024-05-04",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1316,
+    "spark": [1, 1, 1, 2, 4, 1, 1]
+  },
+  {
+    "id": 124,
+    "transactionId": "TXN-2024-0124",
+    "date": "2024-05-03",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7347,
+    "spark": [9, 3, 7, 3, 3, 9, 4]
+  },
+  {
+    "id": 123,
+    "transactionId": "TXN-2024-0123",
+    "date": "2024-05-02",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 8888,
+    "spark": [6, 7, 6, 3, 6, 9, 10]
+  },
+  {
+    "id": 122,
+    "transactionId": "TXN-2024-0122",
+    "date": "2024-05-01",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 85245,
+    "spark": [83, 88, 84, 81, 85, 85, 84]
+  },
+  {
+    "id": 121,
+    "transactionId": "TXN-2024-0121",
+    "date": "2024-04-30",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6700,
+    "spark": [3, 8, 6, 6, 1, 4, 6]
+  },
+  {
+    "id": 120,
+    "transactionId": "TXN-2024-0120",
+    "date": "2024-04-29",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 3997,
+    "spark": [7, 1, 1, 4, 3, 2, 1]
+  },
+  {
+    "id": 119,
+    "transactionId": "TXN-2024-0119",
+    "date": "2024-04-28",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 77446,
+    "spark": [78, 72, 77, 77, 78, 72, 79]
+  },
+  {
+    "id": 118,
+    "transactionId": "TXN-2024-0118",
+    "date": "2024-04-27",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 6710,
+    "spark": [5, 3, 7, 10, 6, 10, 9]
+  },
+  {
+    "id": 117,
+    "transactionId": "TXN-2024-0117",
+    "date": "2024-04-26",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 77865,
+    "spark": [72, 72, 73, 80, 81, 81, 73]
+  },
+  {
+    "id": 116,
+    "transactionId": "TXN-2024-0116",
+    "date": "2024-04-25",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1315,
+    "spark": [1, 1, 2, 1, 5, 5, 3]
+  },
+  {
+    "id": 115,
+    "transactionId": "TXN-2024-0115",
+    "date": "2024-04-24",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2692,
+    "spark": [1, 1, 1, 1, 1, 1, 4]
+  },
+  {
+    "id": 114,
+    "transactionId": "TXN-2024-0114",
+    "date": "2024-04-23",
+    "title": "Stock Dividend",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 6218,
+    "spark": [10, 10, 2, 1, 1, 9, 3]
+  },
+  {
+    "id": 113,
+    "transactionId": "TXN-2024-0113",
+    "date": "2024-04-22",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 74760,
+    "spark": [71, 76, 78, 70, 75, 72, 69]
+  },
+  {
+    "id": 112,
+    "transactionId": "TXN-2024-0112",
+    "date": "2024-04-21",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 17925,
+    "spark": [21, 12, 20, 21, 13, 20, 16]
+  },
+  {
+    "id": 111,
+    "transactionId": "TXN-2024-0111",
+    "date": "2024-04-20",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 25317,
+    "spark": [25, 25, 22, 20, 29, 25, 21]
+  },
+  {
+    "id": 110,
+    "transactionId": "TXN-2024-0110",
+    "date": "2024-04-19",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 13893,
+    "spark": [17, 9, 17, 12, 16, 16, 11]
+  },
+  {
+    "id": 109,
+    "transactionId": "TXN-2024-0109",
+    "date": "2024-04-18",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 3658,
+    "spark": [4, 5, 7, 1, 4, 1, 2]
+  },
+  {
+    "id": 108,
+    "transactionId": "TXN-2024-0108",
+    "date": "2024-04-17",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 7717,
+    "spark": [5, 4, 10, 7, 9, 8, 6]
+  },
+  {
+    "id": 107,
+    "transactionId": "TXN-2024-0107",
+    "date": "2024-04-16",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 82418,
+    "spark": [82, 81, 81, 79, 83, 86, 83]
+  },
+  {
+    "id": 106,
+    "transactionId": "TXN-2024-0106",
+    "date": "2024-04-15",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2324,
+    "spark": [2, 4, 5, 2, 6, 1, 5]
+  },
+  {
+    "id": 105,
+    "transactionId": "TXN-2024-0105",
+    "date": "2024-04-14",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 89833,
+    "spark": [89, 86, 91, 86, 88, 87, 86]
+  },
+  {
+    "id": 104,
+    "transactionId": "TXN-2024-0104",
+    "date": "2024-04-13",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 8441,
+    "spark": [3, 7, 5, 5, 9, 7, 10]
+  },
+  {
+    "id": 103,
+    "transactionId": "TXN-2024-0103",
+    "date": "2024-04-12",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 375,
+    "spark": [1, 1, 1, 1, 2, 4, 1]
+  },
+  {
+    "id": 102,
+    "transactionId": "TXN-2024-0102",
+    "date": "2024-04-11",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 25835,
+    "spark": [24, 25, 22, 24, 21, 25, 24]
+  },
+  {
+    "id": 101,
+    "transactionId": "TXN-2024-0101",
+    "date": "2024-04-10",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 17212,
+    "spark": [13, 19, 19, 14, 17, 12, 13]
+  },
+  {
+    "id": 100,
+    "transactionId": "TXN-2024-0100",
+    "date": "2024-04-09",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1476,
+    "spark": [4, 1, 5, 3, 2, 2, 4]
+  },
+  {
+    "id": 99,
+    "transactionId": "TXN-2024-0099",
+    "date": "2024-04-08",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 18869,
+    "spark": [20, 13, 17, 22, 20, 13, 17]
+  },
+  {
+    "id": 98,
+    "transactionId": "TXN-2024-0098",
+    "date": "2024-04-07",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 19299,
+    "spark": [23, 14, 20, 18, 22, 16, 17]
+  },
+  {
+    "id": 97,
+    "transactionId": "TXN-2024-0097",
+    "date": "2024-04-06",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 951,
+    "spark": [1, 2, 1, 1, 2, 2, 1]
+  },
+  {
+    "id": 96,
+    "transactionId": "TXN-2024-0096",
+    "date": "2024-04-05",
+    "title": "Water Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 812,
+    "spark": [1, 1, 1, 1, 2, 1, 1]
+  },
+  {
+    "id": 95,
+    "transactionId": "TXN-2024-0095",
+    "date": "2024-04-04",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 776,
+    "spark": [2, 4, 1, 4, 2, 1, 1]
+  },
+  {
+    "id": 94,
+    "transactionId": "TXN-2024-0094",
+    "date": "2024-04-03",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 294,
+    "spark": [2, 3, 1, 1, 2, 3, 1]
+  },
+  {
+    "id": 93,
+    "transactionId": "TXN-2024-0093",
+    "date": "2024-04-02",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1114,
+    "spark": [1, 2, 1, 1, 1, 1, 5]
+  },
+  {
+    "id": 92,
+    "transactionId": "TXN-2024-0092",
+    "date": "2024-04-01",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2897,
+    "spark": [1, 1, 1, 1, 5, 5, 6]
+  },
+  {
+    "id": 91,
+    "transactionId": "TXN-2024-0091",
+    "date": "2024-03-31",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 715,
+    "spark": [1, 1, 1, 1, 3, 1, 1]
+  },
+  {
+    "id": 90,
+    "transactionId": "TXN-2024-0090",
+    "date": "2024-03-30",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 90012,
+    "spark": [85, 92, 87, 89, 85, 91, 88]
+  },
+  {
+    "id": 89,
+    "transactionId": "TXN-2024-0089",
+    "date": "2024-03-29",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2428,
+    "spark": [1, 1, 1, 1, 3, 4, 1]
+  },
+  {
+    "id": 88,
+    "transactionId": "TXN-2024-0088",
+    "date": "2024-03-28",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4029,
+    "spark": [2, 1, 5, 7, 3, 1, 7]
+  },
+  {
+    "id": 87,
+    "transactionId": "TXN-2024-0087",
+    "date": "2024-03-27",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 570,
+    "spark": [4, 1, 2, 1, 1, 1, 2]
+  },
+  {
+    "id": 86,
+    "transactionId": "TXN-2024-0086",
+    "date": "2024-03-26",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 70915,
+    "spark": [65, 69, 72, 65, 68, 66, 68]
+  },
+  {
+    "id": 85,
+    "transactionId": "TXN-2024-0085",
+    "date": "2024-03-25",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 83036,
+    "spark": [84, 85, 83, 78, 79, 80, 80]
+  },
+  {
+    "id": 84,
+    "transactionId": "TXN-2024-0084",
+    "date": "2024-03-24",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 94609,
+    "spark": [92, 91, 93, 98, 92, 89, 94]
+  },
+  {
+    "id": 83,
+    "transactionId": "TXN-2024-0083",
+    "date": "2024-03-23",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 566,
+    "spark": [1, 2, 1, 1, 2, 1, 2]
+  },
+  {
+    "id": 82,
+    "transactionId": "TXN-2024-0082",
+    "date": "2024-03-22",
+    "title": "Electricity Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3108,
+    "spark": [2, 2, 7, 2, 2, 1, 1]
+  },
+  {
+    "id": 81,
+    "transactionId": "TXN-2024-0081",
+    "date": "2024-03-21",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 71595,
+    "spark": [71, 68, 66, 72, 74, 66, 68]
+  },
+  {
+    "id": 80,
+    "transactionId": "TXN-2024-0080",
+    "date": "2024-03-20",
+    "title": "Pharmacy Bill",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 548,
+    "spark": [1, 1, 1, 1, 1, 1, 2]
+  },
+  {
+    "id": 79,
+    "transactionId": "TXN-2024-0079",
+    "date": "2024-03-19",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 28057,
+    "spark": [32, 30, 23, 23, 25, 25, 29]
+  },
+  {
+    "id": 78,
+    "transactionId": "TXN-2024-0078",
+    "date": "2024-03-18",
+    "title": "Stock Dividend",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 6903,
+    "spark": [8, 7, 7, 4, 8, 3, 9]
+  },
+  {
+    "id": 77,
+    "transactionId": "TXN-2024-0077",
+    "date": "2024-03-17",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 7498,
+    "spark": [11, 10, 9, 8, 6, 5, 11]
+  },
+  {
+    "id": 76,
+    "transactionId": "TXN-2024-0076",
+    "date": "2024-03-16",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2091,
+    "spark": [1, 2, 3, 1, 1, 5, 1]
+  },
+  {
+    "id": 75,
+    "transactionId": "TXN-2024-0075",
+    "date": "2024-03-15",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 6446,
+    "spark": [10, 4, 6, 10, 2, 3, 5]
+  },
+  {
+    "id": 74,
+    "transactionId": "TXN-2024-0074",
+    "date": "2024-03-14",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 14899,
+    "spark": [18, 13, 15, 15, 12, 13, 16]
+  },
+  {
+    "id": 73,
+    "transactionId": "TXN-2024-0073",
+    "date": "2024-03-13",
+    "title": "Swiggy Order",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 690,
+    "spark": [1, 1, 1, 1, 4, 4, 1]
+  },
+  {
+    "id": 72,
+    "transactionId": "TXN-2024-0072",
+    "date": "2024-03-12",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2664,
+    "spark": [1, 1, 1, 1, 5, 1, 6]
+  },
+  {
+    "id": 71,
+    "transactionId": "TXN-2024-0071",
+    "date": "2024-03-11",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 10048,
+    "spark": [12, 13, 9, 13, 5, 14, 11]
+  },
+  {
+    "id": 70,
+    "transactionId": "TXN-2024-0070",
+    "date": "2024-03-10",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 5196,
+    "spark": [9, 4, 2, 1, 1, 7, 2]
+  },
+  {
+    "id": 69,
+    "transactionId": "TXN-2024-0069",
+    "date": "2024-03-09",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 12381,
+    "spark": [8, 13, 8, 15, 7, 12, 14]
+  },
+  {
+    "id": 68,
+    "transactionId": "TXN-2024-0068",
+    "date": "2024-03-08",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1302,
+    "spark": [1, 1, 5, 1, 1, 1, 1]
+  },
+  {
+    "id": 67,
+    "transactionId": "TXN-2024-0067",
+    "date": "2024-03-07",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3059,
+    "spark": [4, 3, 3, 3, 2, 5, 1]
+  },
+  {
+    "id": 66,
+    "transactionId": "TXN-2024-0066",
+    "date": "2024-03-06",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3107,
+    "spark": [2, 1, 1, 1, 1, 1, 1]
+  },
+  {
+    "id": 65,
+    "transactionId": "TXN-2024-0065",
+    "date": "2024-03-05",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 87485,
+    "spark": [89, 89, 84, 88, 87, 82, 84]
+  },
+  {
+    "id": 64,
+    "transactionId": "TXN-2024-0064",
+    "date": "2024-03-04",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 80040,
+    "spark": [80, 79, 79, 79, 79, 80, 84]
+  },
+  {
+    "id": 63,
+    "transactionId": "TXN-2024-0063",
+    "date": "2024-03-03",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5009,
+    "spark": [9, 1, 2, 4, 8, 5, 1]
+  },
+  {
+    "id": 62,
+    "transactionId": "TXN-2024-0062",
+    "date": "2024-03-02",
+    "title": "Clothing Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 2144,
+    "spark": [4, 1, 2, 6, 1, 3, 3]
+  },
+  {
+    "id": 61,
+    "transactionId": "TXN-2024-0061",
+    "date": "2024-03-01",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 4224,
+    "spark": [1, 1, 1, 6, 4, 5, 4]
+  },
+  {
+    "id": 60,
+    "transactionId": "TXN-2024-0060",
+    "date": "2024-02-29",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 15634,
+    "spark": [15, 14, 12, 16, 13, 16, 15]
+  },
+  {
+    "id": 59,
+    "transactionId": "TXN-2024-0059",
+    "date": "2024-02-28",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 10109,
+    "spark": [9, 12, 7, 10, 13, 7, 12]
+  },
+  {
+    "id": 58,
+    "transactionId": "TXN-2024-0058",
+    "date": "2024-02-27",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 988,
+    "spark": [1, 4, 3, 1, 1, 1, 1]
+  },
+  {
+    "id": 57,
+    "transactionId": "TXN-2024-0057",
+    "date": "2024-02-26",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 5417,
+    "spark": [1, 4, 6, 9, 9, 1, 3]
+  },
+  {
+    "id": 56,
+    "transactionId": "TXN-2024-0056",
+    "date": "2024-02-25",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 5417,
+    "spark": [7, 4, 7, 1, 8, 6, 3]
+  },
+  {
+    "id": 55,
+    "transactionId": "TXN-2024-0055",
+    "date": "2024-02-24",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1145,
+    "spark": [1, 4, 2, 1, 1, 1, 1]
+  },
+  {
+    "id": 54,
+    "transactionId": "TXN-2024-0054",
+    "date": "2024-02-23",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 1787,
+    "spark": [2, 1, 1, 1, 5, 3, 1]
+  },
+  {
+    "id": 53,
+    "transactionId": "TXN-2024-0053",
+    "date": "2024-02-22",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 4059,
+    "spark": [7, 1, 7, 3, 6, 2, 1]
+  },
+  {
+    "id": 52,
+    "transactionId": "TXN-2024-0052",
+    "date": "2024-02-21",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2102,
+    "spark": [1, 6, 1, 3, 1, 6, 2]
+  },
+  {
+    "id": 51,
+    "transactionId": "TXN-2024-0051",
+    "date": "2024-02-20",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1025,
+    "spark": [1, 1, 1, 3, 4, 5, 4]
+  },
+  {
+    "id": 50,
+    "transactionId": "TXN-2024-0050",
+    "date": "2024-02-19",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 26111,
+    "spark": [26, 21, 30, 26, 30, 21, 24]
+  },
+  {
+    "id": 49,
+    "transactionId": "TXN-2024-0049",
+    "date": "2024-02-18",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 12557,
+    "spark": [11, 14, 7, 16, 11, 10, 14]
+  },
+  {
+    "id": 48,
+    "transactionId": "TXN-2024-0048",
+    "date": "2024-02-17",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 9563,
+    "spark": [4, 10, 12, 9, 4, 13, 4]
+  },
+  {
+    "id": 47,
+    "transactionId": "TXN-2024-0047",
+    "date": "2024-02-16",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 6256,
+    "spark": [6, 8, 5, 8, 9, 7, 4]
+  },
+  {
+    "id": 46,
+    "transactionId": "TXN-2024-0046",
+    "date": "2024-02-15",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4209,
+    "spark": [4, 7, 6, 4, 7, 5, 5]
+  },
+  {
+    "id": 45,
+    "transactionId": "TXN-2024-0045",
+    "date": "2024-02-14",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 5358,
+    "spark": [8, 6, 6, 1, 9, 8, 9]
+  },
+  {
+    "id": 44,
+    "transactionId": "TXN-2024-0044",
+    "date": "2024-02-13",
+    "title": "Phone Recharge",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 3233,
+    "spark": [7, 1, 3, 1, 2, 6, 1]
+  },
+  {
+    "id": 43,
+    "transactionId": "TXN-2024-0043",
+    "date": "2024-02-12",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 79399,
+    "spark": [83, 78, 82, 77, 80, 83, 83]
+  },
+  {
+    "id": 42,
+    "transactionId": "TXN-2024-0042",
+    "date": "2024-02-11",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 15979,
+    "spark": [17, 15, 18, 10, 16, 11, 18]
+  },
+  {
+    "id": 41,
+    "transactionId": "TXN-2024-0041",
+    "date": "2024-02-10",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 85096,
+    "spark": [84, 82, 82, 84, 83, 82, 82]
+  },
+  {
+    "id": 40,
+    "transactionId": "TXN-2024-0040",
+    "date": "2024-02-09",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 5600,
+    "spark": [4, 7, 1, 1, 2, 2, 1]
+  },
+  {
+    "id": 39,
+    "transactionId": "TXN-2024-0039",
+    "date": "2024-02-08",
+    "title": "Project Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 6751,
+    "spark": [9, 10, 8, 5, 10, 4, 9]
+  },
+  {
+    "id": 38,
+    "transactionId": "TXN-2024-0038",
+    "date": "2024-02-07",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2973,
+    "spark": [6, 5, 4, 4, 1, 6, 1]
+  },
+  {
+    "id": 37,
+    "transactionId": "TXN-2024-0037",
+    "date": "2024-02-06",
+    "title": "Mutual Fund SIP",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 11416,
+    "spark": [7, 9, 14, 11, 11, 8, 14]
+  },
+  {
+    "id": 36,
+    "transactionId": "TXN-2024-0036",
+    "date": "2024-02-05",
+    "title": "Loan EMI",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7739,
+    "spark": [10, 8, 6, 8, 8, 4, 7]
+  },
+  {
+    "id": 35,
+    "transactionId": "TXN-2024-0035",
+    "date": "2024-02-04",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 4743,
+    "spark": [2, 8, 4, 3, 4, 1, 1]
+  },
+  {
+    "id": 34,
+    "transactionId": "TXN-2024-0034",
+    "date": "2024-02-03",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1563,
+    "spark": [1, 5, 2, 2, 3, 5, 5]
+  },
+  {
+    "id": 33,
+    "transactionId": "TXN-2024-0033",
+    "date": "2024-02-02",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 13430,
+    "spark": [9, 16, 13, 9, 8, 17, 16]
+  },
+  {
+    "id": 32,
+    "transactionId": "TXN-2024-0032",
+    "date": "2024-02-01",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1951,
+    "spark": [1, 2, 1, 1, 1, 4, 1]
+  },
+  {
+    "id": 31,
+    "transactionId": "TXN-2024-0031",
+    "date": "2024-01-31",
+    "title": "Internet Bill",
+    "category": "Utilities",
+    "type": "Expense",
+    "amount": 2097,
+    "spark": [4, 1, 6, 1, 6, 6, 2]
+  },
+  {
+    "id": 30,
+    "transactionId": "TXN-2024-0030",
+    "date": "2024-01-30",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 73729,
+    "spark": [71, 74, 70, 68, 69, 68, 71]
+  },
+  {
+    "id": 29,
+    "transactionId": "TXN-2024-0029",
+    "date": "2024-01-29",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3453,
+    "spark": [1, 1, 1, 1, 1, 1, 5]
+  },
+  {
+    "id": 28,
+    "transactionId": "TXN-2024-0028",
+    "date": "2024-01-28",
+    "title": "Crypto Profit",
+    "category": "Investment",
+    "type": "Income",
+    "amount": 5282,
+    "spark": [5, 2, 5, 3, 1, 3, 2]
+  },
+  {
+    "id": 27,
+    "transactionId": "TXN-2024-0027",
+    "date": "2024-01-27",
+    "title": "Zomato Dinner",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 2278,
+    "spark": [1, 2, 5, 3, 1, 3, 5]
+  },
+  {
+    "id": 26,
+    "transactionId": "TXN-2024-0026",
+    "date": "2024-01-26",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 2566,
+    "spark": [1, 2, 4, 3, 1, 1, 1]
+  },
+  {
+    "id": 25,
+    "transactionId": "TXN-2024-0025",
+    "date": "2024-01-25",
+    "title": "Netflix",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 249,
+    "spark": [1, 1, 1, 1, 1, 1, 3]
+  },
+  {
+    "id": 24,
+    "transactionId": "TXN-2024-0024",
+    "date": "2024-01-24",
+    "title": "Groceries",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 1326,
+    "spark": [1, 1, 5, 1, 5, 5, 1]
+  },
+  {
+    "id": 23,
+    "transactionId": "TXN-2024-0023",
+    "date": "2024-01-23",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 16550,
+    "spark": [20, 13, 12, 17, 16, 16, 17]
+  },
+  {
+    "id": 22,
+    "transactionId": "TXN-2024-0022",
+    "date": "2024-01-22",
+    "title": "Fuel Refill",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2051,
+    "spark": [1, 5, 4, 5, 2, 6, 1]
+  },
+  {
+    "id": 21,
+    "transactionId": "TXN-2024-0021",
+    "date": "2024-01-21",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 1122,
+    "spark": [1, 2, 1, 1, 1, 3, 2]
+  },
+  {
+    "id": 20,
+    "transactionId": "TXN-2024-0020",
+    "date": "2024-01-20",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 1860,
+    "spark": [1, 1, 5, 1, 1, 1, 5]
+  },
+  {
+    "id": 19,
+    "transactionId": "TXN-2024-0019",
+    "date": "2024-01-19",
+    "title": "Salary Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 91265,
+    "spark": [95, 95, 87, 86, 92, 93, 87]
+  },
+  {
+    "id": 18,
+    "transactionId": "TXN-2024-0018",
+    "date": "2024-01-18",
+    "title": "Freelance Payment",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 16046,
+    "spark": [15, 13, 12, 14, 13, 13, 13]
+  },
+  {
+    "id": 17,
+    "transactionId": "TXN-2024-0017",
+    "date": "2024-01-17",
+    "title": "Bonus Credit",
+    "category": "Salary",
+    "type": "Income",
+    "amount": 99801,
+    "spark": [96, 95, 103, 102, 94, 100, 103]
+  },
+  {
+    "id": 16,
+    "transactionId": "TXN-2024-0016",
+    "date": "2024-01-16",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 1508,
+    "spark": [1, 5, 3, 4, 5, 1, 1]
+  },
+  {
+    "id": 15,
+    "transactionId": "TXN-2024-0015",
+    "date": "2024-01-15",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 787,
+    "spark": [3, 3, 1, 1, 3, 3, 3]
+  },
+  {
+    "id": 14,
+    "transactionId": "TXN-2024-0014",
+    "date": "2024-01-14",
+    "title": "Rental Income",
+    "category": "Rent",
+    "type": "Income",
+    "amount": 22564,
+    "spark": [24, 25, 17, 23, 19, 26, 20]
+  },
+  {
+    "id": 13,
+    "transactionId": "TXN-2024-0013",
+    "date": "2024-01-13",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 5919,
+    "spark": [1, 5, 1, 6, 2, 1, 9]
+  },
+  {
+    "id": 12,
+    "transactionId": "TXN-2024-0012",
+    "date": "2024-01-12",
+    "title": "Credit Card Payment",
+    "category": "Finance",
+    "type": "Expense",
+    "amount": 7147,
+    "spark": [2, 7, 11, 9, 5, 8, 2]
+  },
+  {
+    "id": 11,
+    "transactionId": "TXN-2024-0011",
+    "date": "2024-01-11",
+    "title": "Consulting Fee",
+    "category": "Freelance",
+    "type": "Income",
+    "amount": 18308,
+    "spark": [13, 14, 15, 20, 14, 13, 13]
+  },
+  {
+    "id": 10,
+    "transactionId": "TXN-2024-0010",
+    "date": "2024-01-10",
+    "title": "Amazon Purchase",
+    "category": "Shopping",
+    "type": "Expense",
+    "amount": 6170,
+    "spark": [1, 5, 7, 8, 3, 10, 2]
+  },
+  {
+    "id": 9,
+    "transactionId": "TXN-2024-0009",
+    "date": "2024-01-09",
+    "title": "Uber Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2108,
+    "spark": [4, 1, 4, 6, 6, 5, 1]
+  },
+  {
+    "id": 8,
+    "transactionId": "TXN-2024-0008",
+    "date": "2024-01-08",
+    "title": "Book Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 4152,
+    "spark": [2, 4, 2, 6, 1, 4, 6]
+  },
+  {
+    "id": 7,
+    "transactionId": "TXN-2024-0007",
+    "date": "2024-01-07",
+    "title": "Movie Tickets",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 978,
+    "spark": [1, 1, 1, 1, 1, 3, 3]
+  },
+  {
+    "id": 6,
+    "transactionId": "TXN-2024-0006",
+    "date": "2024-01-06",
+    "title": "Taxi Ride",
+    "category": "Transport",
+    "type": "Expense",
+    "amount": 2097,
+    "spark": [1, 6, 1, 1, 1, 3, 2]
+  },
+  {
+    "id": 5,
+    "transactionId": "TXN-2024-0005",
+    "date": "2024-01-05",
+    "title": "Gym Membership",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 2129,
+    "spark": [1, 1, 6, 4, 4, 1, 2]
+  },
+  {
+    "id": 4,
+    "transactionId": "TXN-2024-0004",
+    "date": "2024-01-04",
+    "title": "Doctor Visit",
+    "category": "Health",
+    "type": "Expense",
+    "amount": 879,
+    "spark": [1, 2, 1, 3, 1, 1, 1]
+  },
+  {
+    "id": 3,
+    "transactionId": "TXN-2024-0003",
+    "date": "2024-01-03",
+    "title": "Course Purchase",
+    "category": "Education",
+    "type": "Expense",
+    "amount": 672,
+    "spark": [1, 4, 3, 1, 3, 1, 1]
+  },
+  {
+    "id": 2,
+    "transactionId": "TXN-2024-0002",
+    "date": "2024-01-02",
+    "title": "Spotify",
+    "category": "Entertainment",
+    "type": "Expense",
+    "amount": 836,
+    "spark": [1, 1, 1, 2, 1, 2, 1]
+  },
+  {
+    "id": 1,
+    "transactionId": "TXN-2024-0001",
+    "date": "2024-01-01",
+    "title": "Restaurant Bill",
+    "category": "Food",
+    "type": "Expense",
+    "amount": 3380,
+    "spark": [2, 1, 1, 2, 1, 1, 3]
+  }
+]
