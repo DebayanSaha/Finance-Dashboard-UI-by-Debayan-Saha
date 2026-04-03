@@ -8,15 +8,15 @@ import {
   LogOut,
   ArrowUpRight,
 } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const navItems = [
-  { id: "dashboard",    label: "Dashboard",    icon: LayoutDashboard },
-  { id: "transactions", label: "Transactions", icon: ArrowLeftRight   },
-  { id: "inside",       label: "Insights",       icon: FileText         },
+  { id: "dashboard", label: "Dashboard", icon: LayoutDashboard, path: "/" },
+  { id: "transactions", label: "Transactions", icon: ArrowLeftRight, path: "/transactions" },
+  { id: "insights", label: "Insights", icon: FileText, path: "/insights" },
 ];
 
 const Sidebar = () => {
-  const [active, setActive] = useState("dashboard");
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -52,42 +52,49 @@ const Sidebar = () => {
 
       {/* ── Nav items ── */}
       <nav className="flex-1 flex flex-col gap-1 px-3">
-        {navItems.map(({ id, label, icon: Icon }) => {
-          const isActive = active === id;
-          return (
-            <button
-              key={id}
-              onClick={() => setActive(id)}
-              className={`cursor-pointer flex items-center gap-3 px-4 py-3 rounded-2xl w-full text-left transition-all duration-150 ${
+        {navItems.map(({ id, label, icon: Icon, path }) => (
+          <NavLink
+            key={id}
+            to={path}
+            className={({ isActive }) =>
+              `cursor-pointer flex items-center gap-3 px-4 py-3 rounded-2xl w-full text-left transition-all duration-150 ${
                 isActive
                   ? "bg-orange-500 text-white shadow-md shadow-orange-200"
                   : "text-gray-500 hover:bg-orange-100 hover:text-orange-600"
-              }`}
-            >
-              <Icon
-                size={20}
-                className={`shrink-0 ${isActive ? "text-white" : "text-gray-400"}`}
-              />
-              {!collapsed && (
-                <span className="text-sm font-[font3]">{label}</span>
-              )}
-            </button>
-          );
-        })}
+              }`
+            }
+          >
+            {({ isActive }) => (
+              <>
+                <Icon
+                  size={20}
+                  className={`shrink-0 ${
+                    isActive ? "text-white" : "text-gray-400"
+                  }`}
+                />
+                {!collapsed && (
+                  <span className="text-sm font-[font3]">{label}</span>
+                )}
+              </>
+            )}
+          </NavLink>
+        ))}
       </nav>
 
       {/* ── Bottom section ── */}
       <div className="flex flex-col gap-1 px-3 pb-4">
         {[
           { icon: HelpCircle, label: "Help" },
-          { icon: LogOut,     label: "Log out" },
+          { icon: LogOut, label: "Log out" },
         ].map(({ icon: Icon, label }) => (
           <button
             key={label}
             className="cursor-pointer flex items-center gap-3 px-4 py-3 rounded-2xl text-gray-400 hover:bg-orange-100 hover:text-orange-500 transition-colors w-full text-left"
           >
             <Icon size={20} className="shrink-0" />
-            {!collapsed && <span className="text-sm font-[font3] ">{label}</span>}
+            {!collapsed && (
+              <span className="text-sm font-[font3] ">{label}</span>
+            )}
           </button>
         ))}
 
@@ -100,7 +107,9 @@ const Sidebar = () => {
           >
             <button className="cursor-pointer flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white rounded-2xl px-4 py-3 w-full transition-colors shadow-md shadow-orange-200">
               <ArrowUpRight size={18} className="shrink-0" />
-              {!collapsed && <span className="text-sm font-[font2]">Visit</span>}
+              {!collapsed && (
+                <span className="text-sm font-[font2]">Visit</span>
+              )}
             </button>
           </a>
         </div>
