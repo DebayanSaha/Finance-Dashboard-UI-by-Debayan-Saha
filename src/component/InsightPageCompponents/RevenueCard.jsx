@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { revenueData } from "../../data/dashboardData";
+import { revenueData } from "../../data/insightsData";
 
 const RevenueCard = () => {
   const canvasRef = useRef(null);

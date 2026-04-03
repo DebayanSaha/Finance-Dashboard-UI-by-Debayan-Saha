@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "currency": "USD",
+    "timeRange": {
+      "start": "2025-07-01",
+      "end": "2025-07-19",
+      "resolution": "daily"
+    }
+  },
+
+  "kpis": {
+    "totalBalance": {
+      "value": 15700,
+      "changePercent": 12.1,
+      "trend": "up"
+    },
+    "totalIncome": {
+      "value": 8500,
+      "changePercent": 6.3,
+      "trend": "up"
+    },
+    "totalExpenses": {
+      "value": 6222,
+      "changePercent": 2.4,
+      "trend": "down"
+    },
+    "savingsRate": {
+      "value": 27,
+      "changePercent": 3.2,
+      "trend": "up"
+    }
+  },
+
+  "timeseries": {
+    "labels": [
+      "2025-07-01",
+      "2025-07-03",
+      "2025-07-05",
+      "2025-07-07",
+      "2025-07-09",
+      "2025-07-11",
+      "2025-07-13",
+      "2025-07-15",
+      "2025-07-17",
+      "2025-07-19"
+    ],
+
+    "balance": {
+      "current": [16000, 15000, 10000, 13000, 19000, 13000, 16000, 20000, 15000, 17000],
+      "previous": [17000, 18000, 12000, 14000, 15000, 14000, 11000, 12000, 13000, 14000],
+
+      "analytics": {
+        "latest": 17000,
+        "previousLatest": 14000,
+        "change": 3000,
+        "changePercent": 21.4,
+        "peak": { "value": 20000, "date": "2025-07-15" },
+        "trough": { "value": 10000, "date": "2025-07-05" },
+        "average": {
+          "current": 15400,
+          "previous": 14000
+        }
+      }
+    },
+
+    "income": {
+      "current": [4200, 3800, 2900, 3500, 5100, 3200, 4400, 5500, 3900, 4700],
+      "previous": [4500, 4900, 3100, 3800, 3900, 3600, 2800, 3100, 3400, 3600],
+
+      "analytics": {
+        "latest": 4700,
+        "previousLatest": 3600,
+        "change": 1100,
+        "changePercent": 30.6,
+        "peak": { "value": 5500, "date": "2025-07-15" },
+        "trough": { "value": 2900, "date": "2025-07-05" },
+        "average": {
+          "current": 4120,
+          "previous": 3760
+        }
+      }
+    }
+  },
+
+  "expenses": {
+    "total": 6222,
+    "changePercent": 8.4,
+
+    "categories": [
+      {
+        "name": "Money Transfer",
+        "amount": 2500,
+        "percentage": 40
+      },
+      {
+        "name": "Cafe & Restaurants",
+        "amount": 1200,
+        "percentage": 19
+      },
+      {
+        "name": "Rent",
+        "amount": 900,
+        "percentage": 14
+      },
+      {
+        "name": "Education",
+        "amount": 600,
+        "percentage": 10
+      },
+      {
+        "name": "Food & Groceries",
+        "amount": 700,
+        "percentage": 11
+      },
+      {
+        "name": "Others",
+        "amount": 322,
+        "percentage": 6
+      }
+    ],
+
+    "insights": {
+      "topCategory": {
+        "name": "Money Transfer",
+        "amount": 2500,
+        "percentage": 40
+      }
+    }
+  }
+}

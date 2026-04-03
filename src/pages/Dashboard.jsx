@@ -29,12 +29,14 @@ const Dashboard = () => {
               <StatsCards />
             </div>
           </div>
-          <div className="w-full mt-8 p-2 ">
-            <BalanceChart />
-          </div>
+          <div className="w-full mt-8 flex gap-2">
+            <div className="w-[70%] p-2 border-2 rounded-3xl border-[#f7962e98]">
+              <BalanceChart />
+            </div>
 
-          <div className="w-full mt-8  ">
-            <StatisticsChart />
+            <div className="w-[30%] border-2 border-[#f7962e98] rounded-3xl overflow-hidden">
+              <StatisticsChart />
+            </div>
           </div>
         </div>
       </div>

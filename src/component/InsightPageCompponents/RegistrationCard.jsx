@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { registrations, regSparkline } from "../../data/dashboardData";
+import { registrations, regSparkline } from "../../data/insightsData";
 
 const statusStyles = {
   Approved: "bg-emerald-50 text-emerald-700",
@@ -59,15 +59,15 @@ const RegistrationCard = () => {
 
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
-        <span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">
+        <span className="text-[15px] font-[font3] uppercase text-gray-400">
           Registrations
         </span>
-        <div className="flex gap-[2px] bg-gray-100 border border-gray-200 rounded-lg p-[3px]">
+        <div className="flex gap-0.5 bg-orange-100 border border-orange-200 rounded-full p-0.75">
           {["1W", "1M", "1Y"].map((t) => (
             <button
               key={t}
               onClick={() => setActiveTab(t)}
-              className={`text-[10px] font-semibold px-2.5 py-[3px] rounded-md transition-all cursor-pointer
+              className={`text-[10px] font-semibold px-2.5 py-[3px] rounded-full transition-all cursor-pointer
                 ${activeTab === t
                   ? "bg-white text-gray-800 shadow-sm"
                   : "text-gray-400 hover:text-gray-600"
@@ -81,14 +81,14 @@ const RegistrationCard = () => {
 
       {/* Stat */}
       <div className="flex items-baseline gap-2.5 mb-1">
-        <span className="text-[28px] font-semibold tracking-tight text-gray-900 leading-none tabular-nums">
+        <span className="text-[28px] font-[font1] tracking-tight text-gray-900 leading-none tabular-nums">
           24,050
         </span>
-        <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
+        <span className="inline-flex items-center gap-1 text-[11px] font-[font3] text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
           ↑ 44%
         </span>
       </div>
-      <p className="text-[11px] text-gray-400 mb-2">vs last Sunday</p>
+      <p className="text-[11px] text-gray-400 mb-2 font-[font3]">vs last Sunday</p>
 
       {/* Sparkline */}
       <div className="h-10 mb-4">
@@ -103,7 +103,7 @@ const RegistrationCard = () => {
               {["Client", "Time", "Email", "Status"].map((h) => (
                 <th
                   key={h}
-                  className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 pb-2 text-left border-b border-gray-100"
+                  className="text-[10px] font-[font3] uppercase tracking-widest text-gray-400 pb-2 text-left border-b border-gray-100"
                 >
                   {h}
                 </th>
@@ -120,12 +120,12 @@ const RegistrationCard = () => {
                 <td className="py-2 pr-3">
                   <div className="flex items-center gap-2">
                     <div
-                      className="w-[26px] h-[26px] rounded-full flex items-center justify-center text-[9px] font-bold flex-shrink-0"
+                      className="w-[26px] h-[26px] rounded-full flex items-center justify-center text-[9px] font-[font2] flex-shrink-0"
                       style={{ background: reg.bg, color: reg.fg }}
                     >
                       {reg.initials}
                     </div>
-                    <span className="text-[12px] font-medium text-gray-800 whitespace-nowrap">
+                    <span className="text-[12px] font-[font3] text-gray-800 whitespace-nowrap">
                       {reg.name}
                     </span>
                   </div>
@@ -133,14 +133,14 @@ const RegistrationCard = () => {
 
                 {/* Time */}
                 <td className="py-2 pr-3">
-                  <span className="text-[11px] text-gray-400 whitespace-nowrap tabular-nums">
+                  <span className="text-[11px] text-gray-400 whitespace-nowrap font-[font3] tabular-nums">
                     {reg.time}
                   </span>
                 </td>
 
                 {/* Email */}
                 <td className="py-2 pr-3">
-                  <span className="text-[11px] text-gray-500 font-mono whitespace-nowrap">
+                  <span className="text-[11px] text-gray-500 font-[font3] whitespace-nowrap">
                     {reg.email}
                   </span>
                 </td>
@@ -148,7 +148,7 @@ const RegistrationCard = () => {
                 {/* Status */}
                 <td className="py-2">
                   <span
-                    className={`inline-flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap ${statusStyles[reg.status]}`}
+                    className={`inline-flex items-center gap-1 text-[10px] font-[font3] px-2 py-0.5 rounded-full whitespace-nowrap ${statusStyles[reg.status]}`}
                   >
                     <span className={`w-1.5 h-1.5 rounded-full ${statusDot[reg.status]}`} />
                     {reg.status}

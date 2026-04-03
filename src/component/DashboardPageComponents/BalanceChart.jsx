@@ -1,52 +1,22 @@
 import { useEffect, useRef, useState } from "react";
 import { Chart, registerables } from "chart.js";
+import data from "../../data/dashboardData.json";
 
 Chart.register(...registerables);
-
-const labels = [
-  "1 Jul",
-  "3 Jul",
-  "5 Jul",
-  "7 Jul",
-  "9 Jul",
-  "11 Jul",
-  "13 Jul",
-  "15 Jul",
-  "17 Jul",
-  "19 Jul",
-];
-
-const DATA = {
-  balance: {
-    current: [
-      16000, 15000, 10000, 13000, 19000, 13000, 16000, 20000, 15000, 17000,
-    ],
-    previous: [
-      17000, 18000, 12000, 14000, 15000, 14000, 11000, 12000, 13000, 14000,
-    ],
-    peak: { value: 20000, label: "15 Jul" },
-    trough: { value: 10000, label: "5 Jul" },
-    avg: { current: 15400, previous: 14000 },
-  },
-  income: {
-    current: [4200, 3800, 2900, 3500, 5100, 3200, 4400, 5500, 3900, 4700],
-    previous: [4500, 4900, 3100, 3800, 3900, 3600, 2800, 3100, 3400, 3600],
-    peak: { value: 5500, label: "15 Jul" },
-    trough: { value: 2900, label: "5 Jul" },
-    avg: { current: 4120, previous: 3760 },
-  },
-};
 
 export default function BalanceChart() {
   const canvasRef = useRef(null);
   const chartRef = useRef(null);
   const [view, setView] = useState("balance");
 
-  const d = DATA[view];
-  const latest = d.current[d.current.length - 1];
-  const prevLatest = d.previous[d.previous.length - 1];
-  const delta = latest - prevLatest;
-  const deltaPct = ((delta / prevLatest) * 100).toFixed(1);
+  const { timeseries } = data;
+  const labels = timeseries.labels;
+  const d = timeseries[view];
+
+  const latest = d.analytics.latest;
+  const prevLatest = d.analytics.previousLatest;
+  const delta = d.analytics.change;
+  const deltaPct = d.analytics.changePercent.toFixed(1);
   const isPos = delta >= 0;
 
   useEffect(() => {
@@ -65,8 +35,9 @@ export default function BalanceChart() {
 
     const fillGrad = ctx.createLinearGradient(0, 0, 0, 240);
     fillGrad.addColorStop(0, "rgba(249,115,22,0.25)");
-fillGrad.addColorStop(0.6, "rgba(249,115,22,0.08)");
-fillGrad.addColorStop(1, "rgba(249,115,22,0)");
+    fillGrad.addColorStop(0.6, "rgba(249,115,22,0.08)");
+    fillGrad.addColorStop(1, "rgba(249,115,22,0)");
+
     const curr = d.current;
     const prev = d.previous;
 
@@ -78,7 +49,7 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
           {
             label: "This month",
             data: curr,
-            borderColor: "#f97316", // orange-500
+            borderColor: "#f97316",
             borderWidth: 2,
             pointBackgroundColor: "#f97316",
             pointBorderColor: "#ffffff",
@@ -93,7 +64,7 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
           {
             label: "Last month",
             data: prev,
-            borderColor: "#fdba74", // orange-300
+            borderColor: "#fdba74",
             borderWidth: 1.5,
             borderDash: [6, 4],
             pointRadius: 0,
@@ -182,27 +153,29 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
     },
     {
       label: "Peak",
-      value: `$${d.peak.value.toLocaleString()}`,
-      sub: d.peak.label,
+      value: `$${d.analytics.peak.value.toLocaleString()}`,
+      sub: d.analytics.peak.date,
       subColor: null,
     },
     {
       label: "Trough",
-      value: `$${d.trough.value.toLocaleString()}`,
-      sub: d.trough.label,
+      value: `$${d.analytics.trough.value.toLocaleString()}`,
+      sub: d.analytics.trough.date,
       subColor: null,
     },
     {
       label: "Avg daily",
-      value: `$${d.avg.current.toLocaleString()}`,
-      sub: `vs $${d.avg.previous.toLocaleString()} prev`,
+      value: `$${d.analytics.average.current.toLocaleString()}`,
+      sub: `vs $${d.analytics.average.previous.toLocaleString()} prev`,
       subColor: null,
     },
   ];
 
   return (
-    <div className="bg-transparent p-2 w-full">
-      {/* ── Header ── */}
+    <div className="bg-transparent shadow-sm p-2 w-full">
+      {/* SAME UI — unchanged */}
+      {/* ... keep everything exactly same below ... */}
+
       <div className="flex items-start justify-between flex-wrap gap-3 mb-5">
         <div>
           <p className="text-[22px] text-gray-900 mb-0.5 font-[font2]">
@@ -214,7 +187,6 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
         </div>
 
         <div className="flex items-center gap-5 flex-wrap">
-          {/* Legend */}
           <div className="flex items-center gap-[18px] text-xs text-gray-500">
             <span className="flex items-center gap-1.5 font-[font3]">
               <span className="inline-block w-[22px] h-0.5 bg-orange-500 rounded-sm" />
@@ -222,14 +194,13 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
             </span>
             <span className="flex items-center gap-1.5">
               <span
-                className="inline-block w-[22px] font-[font3]  "
+                className="inline-block w-[22px]"
                 style={{ borderTop: "2px dashed #fdba74" }}
               />
               Same period last month
             </span>
           </div>
 
-          {/* Toggle buttons */}
           <div className="flex gap-1.5">
             {["balance", "income"].map((v) => {
               const active = view === v;
@@ -252,7 +223,6 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
         </div>
       </div>
 
-      {/* ── Stat cards ── */}
       <div className="grid grid-cols-4 gap-2.5 mb-5">
         {stats.map(({ label, value, sub, subColor }) => (
           <div key={label} className="bg-orange-400/6 rounded-lg px-3.5 py-3">
@@ -271,7 +241,6 @@ fillGrad.addColorStop(1, "rgba(249,115,22,0)");
         ))}
       </div>
 
-      {/* ── Chart ── */}
       <div className="w-full flex justify-center">
         <div className="w-[98%]">
           <div className="relative h-65">

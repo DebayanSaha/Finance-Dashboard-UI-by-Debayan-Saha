@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { countryData } from "../../data/dashboardData";
+import { countryData } from "../../data/insightsData";
 
 const CountryCard = () => {
   const donutRef  = useRef(null);
@@ -40,7 +40,7 @@ const CountryCard = () => {
 
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
-        <span className="text-[10px] font-semibold uppercase tracking-widest text-gray-400">
+        <span className="text-[10px] font-[font2] uppercase tracking-widest text-gray-400">
           By Country
         </span>
         <button className="w-6 h-6 rounded-md bg-gray-100 border border-gray-200 flex items-center justify-center text-[11px] text-gray-500 cursor-pointer hover:bg-gray-200 transition-colors">
@@ -54,12 +54,12 @@ const CountryCard = () => {
           <canvas ref={donutRef} />
         </div>
         <div className="flex flex-col gap-1">
-          <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">
+          <p className="text-[10px] font-[font2] uppercase tracking-widest text-gray-400 mb-1">
             Revenue split
           </p>
           {countryData.map((c) => (
-            <span key={c.name} className="flex items-center gap-1.5 text-[11px] text-gray-500">
-              <span className="w-1.5 h-1.5 rounded-sm flex-shrink-0" style={{ background: c.color }} />
+            <span key={c.name} className="flex items-center gap-1.5 text-[11px] text-gray-500 font-[font3]">
+              <span className="w-1.5 h-1.5  rounded-sm shrink-0" style={{ background: c.color }} />
               {c.name.split(" ")[0]}
             </span>
           ))}
@@ -71,11 +71,11 @@ const CountryCard = () => {
         {countryData.map((c) => (
           <div
             key={c.name}
-            className="flex items-center justify-between px-3 py-2.5 rounded-xl border border-gray-200/80 hover:bg-gray-50 transition-colors cursor-default"
+            className="font-[font3] flex items-center justify-between px-3 py-2.5 rounded-xl border border-gray-200/80 hover:bg-gray-50 transition-colors cursor-default"
           >
             <div>
               <p className="text-[11px] text-gray-400">{c.name}</p>
-              <p className="text-[14px] font-semibold text-gray-900 tabular-nums">
+              <p className="text-[14px] font-[font3] text-gray-900 tabular-nums">
                 ${c.value.toLocaleString()}
               </p>
             </div>
@@ -86,7 +86,7 @@ const CountryCard = () => {
                   style={{ width: `${c.pct}%`, background: c.color }}
                 />
               </div>
-              <span className="text-lg">{c.flag}</span>
+              <span className="text-lg font-[font3]">{c.flag}</span>
             </div>
           </div>
         ))}
