@@ -4,6 +4,15 @@ import data from "../../data/dashboardData.json";
 
 Chart.register(...registerables);
 
+const COLORS = [
+  "#f97316",
+  "#fb923c",
+  "#fdba74",
+  "#4f46e5",
+  "#a78bfa",
+  "#67696b",
+];
+
 export default function StatisticsChart() {
   const canvasRef = useRef(null);
 
@@ -20,14 +29,7 @@ export default function StatisticsChart() {
         datasets: [
           {
             data: categories.map((c) => c.amount),
-            backgroundColor: [
-              "#f97316",
-              "#fb923c",
-              "#fdba74",
-              "#4f46e5",
-              "#a78bfa",
-              "#e2e8f0",
-            ],
+            backgroundColor: COLORS,
             borderWidth: 3,
             borderColor: "#ffffff",
             hoverOffset: 6,
@@ -60,34 +62,25 @@ export default function StatisticsChart() {
   }, []);
 
   return (
-    <div className="bg-white rounded-2xl p-5 w-[300px] border border-gray-100">
-      {/* UI unchanged */}
-      {/* Just replace dynamic values */}
+    <div className="bg-white rounded-2xl p-5 w-full h-full flex flex-col">
 
-      <div className="flex items-center justify-between mb-1">
+      {/* Header */}
+      <div className="mb-1">
         <span className="text-[22px] font-[font2] text-gray-900">
           Statistics
         </span>
-        <div className="flex gap-1.5 rounded-full">
-          {["Expense ↓", "Details →"].map((label) => (
-            <button
-              key={label}
-              className="text-[11px] px-2.5 py-1 rounded-full border border-orange-400 bg-transparent text-gray-500 hover:bg-gray-50 transition-colors"
-            >
-              {label}
-            </button>
-          ))}
-        </div>
       </div>
 
       <p className="text-[13px] text-gray-400 leading-tight mb-4 font-[font3]">
         You have an increase of expenses in several categories this month
       </p>
 
-      <div className="relative flex justify-center items-center mb-4">
-        <div className="relative w-[196px] h-[196px]">
-          <canvas ref={canvasRef} width={196} height={196} />
+      {/* Donut — increased to 224px */}
+      <div className="flex justify-center items-center mb-5">
+        <div className="relative w-[224px] h-[224px] flex-shrink-0">
+          <canvas ref={canvasRef} width={224} height={224} />
 
+          {/* Centre label */}
           <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
             <span className="text-[11px] text-gray-400 mb-0.5">
               This month expense
@@ -102,28 +95,36 @@ export default function StatisticsChart() {
               ▲ {data.expenses.changePercent}%
             </span>
           </div>
-        </div>
 
-        <div className="absolute top-1 right-0 bg-orange-50 border border-orange-100 rounded-xl px-2.5 py-2 text-center">
-          <div className="text-[13px] font-[font3] text-orange-600 leading-none">
-            {data.expenses.insights.topCategory.percentage}%
+          {/* Top-spend badge */}
+          <div className="absolute -top-1 -right-14 bg-orange-50 border border-orange-100 rounded-xl px-2.5 py-2 text-center">
+            <div className="text-[13px] font-[font3] text-orange-600 leading-none">
+              {data.expenses.insights.topCategory.percentage}%
+            </div>
+            <div className="text-[11px] text-orange-500 mt-1">
+              ${data.expenses.insights.topCategory.amount.toLocaleString()}
+            </div>
+            <div className="text-[10px] text-orange-400 mt-0.5">Top spend</div>
           </div>
-          <div className="text-[11px] text-orange-500 mt-1">
-            ${data.expenses.insights.topCategory.amount.toLocaleString()}
-          </div>
-          <div className="text-[10px] text-orange-400 mt-0.5">Top spend</div>
         </div>
       </div>
 
-      <div className="border-t border-gray-100 pt-3">
-        <div className="grid grid-cols-2 gap-x-3 gap-y-2">
-          {categories.map(({ name, percentage }) => (
+      {/* Legend — dots now use the matching chart segment color */}
+      <div className="border-t border-gray-100 pt-3 mt-auto">
+        <div className="grid grid-cols-2 gap-x-3 gap-y-2.5">
+          {categories.map(({ name, percentage }, i) => (
             <div key={name} className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-gray-400" />
+              <span
+                className="w-2 h-2 rounded-full flex-shrink-0"
+                style={{ backgroundColor: COLORS[i] }}
+              />
               <span className="text-[11px] text-gray-500 truncate flex-1">
                 {name}
               </span>
-              <span className="text-[11px] text-gray-300 flex-shrink-0">
+              <span
+                className="text-[11px] font-[font3] flex-shrink-0"
+                style={{ color: COLORS[i] }}
+              >
                 {percentage}%
               </span>
             </div>

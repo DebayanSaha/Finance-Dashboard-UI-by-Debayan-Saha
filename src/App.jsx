@@ -18,7 +18,7 @@ const App = () => {
     <RoleProvider>
       {/* ToastContainer renders all toasts — place once at root, outside Router */}
       <ToastContainer
-        position="bottom-right"
+        position="top-right"
         autoClose={2500}
         hideProgressBar={false}
         closeOnClick

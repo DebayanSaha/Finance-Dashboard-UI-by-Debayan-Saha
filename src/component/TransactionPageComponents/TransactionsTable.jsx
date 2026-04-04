@@ -129,7 +129,10 @@ const TransactionsTable = () => {
   const [search, setSearch] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
   const [filterType, setFilterType] = useState("All");
-  const [filterCategory, setFilterCategory] = useState("All");
+  const [filterCategory, setFilterCategory] = useState("All");           // kept for backward compat
+  const [selectedCategories, setSelectedCategories] = useState([]);      // NEW: multi-category
+  const [dateFrom, setDateFrom] = useState("");                          // NEW: date range start
+  const [dateTo, setDateTo] = useState("");                              // NEW: date range end
   const [sortOrder, setSortOrder] = useState("latest");
   const [page, setPage] = useState(1);
 
@@ -140,11 +143,6 @@ const TransactionsTable = () => {
   }, [search]);
 
   // ── Categories ──
-  const categories = useMemo(
-    () => ["All", ...new Set(transactions.map((t) => t.category))],
-    [transactions]
-  );
-
   const allCategories = useMemo(
     () => [...new Set(transactions.map((t) => t.category))],
     [transactions]
@@ -162,7 +160,18 @@ const TransactionsTable = () => {
     return transactions
       .filter((tx) => tx.title.toLowerCase().includes(debouncedSearch.toLowerCase()))
       .filter((tx) => (filterType === "All" ? true : tx.type === filterType))
-      .filter((tx) => (filterCategory === "All" ? true : tx.category === filterCategory))
+      // Multi-category filter: if nothing selected, show all
+      .filter((tx) =>
+        selectedCategories.length === 0 ? true : selectedCategories.includes(tx.category)
+      )
+      // Date range filter
+      .filter((tx) => {
+        if (!dateFrom && !dateTo) return true;
+        const txDate = new Date(tx.date);
+        if (dateFrom && txDate < new Date(dateFrom)) return false;
+        if (dateTo && txDate > new Date(dateTo)) return false;
+        return true;
+      })
       .sort((a, b) => {
         if (sortOrder === "latest") return new Date(b.date) - new Date(a.date);
         if (sortOrder === "oldest") return new Date(a.date) - new Date(b.date);
@@ -170,7 +179,7 @@ const TransactionsTable = () => {
         if (sortOrder === "low") return a.amount - b.amount;
         return 0;
       });
-  }, [transactions, debouncedSearch, filterType, filterCategory, sortOrder]);
+  }, [transactions, debouncedSearch, filterType, selectedCategories, dateFrom, dateTo, sortOrder]);
 
   // ── Pagination ──
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
@@ -183,8 +192,42 @@ const TransactionsTable = () => {
   // ── Filter handlers ──
   const handleSearch = (e) => { setSearch(e.target.value); setPage(1); };
   const handleFilter = (e) => { setFilterType(e.target.value); setPage(1); };
-  const handleCategoryFilter = (e) => { setFilterCategory(e.target.value); setPage(1); };
   const handleSort = (e) => { setSortOrder(e.target.value); setPage(1); };
+
+  // NEW: Multi-category toggle
+  const handleCategoryToggle = useCallback((cat) => {
+    setSelectedCategories((prev) =>
+      prev.includes(cat) ? prev.filter((c) => c !== cat) : [...prev, cat]
+    );
+    setPage(1);
+  }, []);
+
+  const handleClearCategories = useCallback(() => {
+    setSelectedCategories([]);
+    setPage(1);
+  }, []);
+
+  // NEW: Date range handlers
+  const handleDateFrom = (e) => { setDateFrom(e.target.value); setPage(1); };
+  const handleDateTo = (e) => { setDateTo(e.target.value); setPage(1); };
+
+  // ── EXPORT: download localStorage transactions as JSON ──────────────────────
+  const handleExport = useCallback(() => {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      const data = stored ? JSON.parse(stored) : transactions;
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `transactions_${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast.success("Transactions exported successfully");
+    } catch {
+      toast.error("Export failed");
+    }
+  }, [transactions]);
 
   // ── ADD ──
   const handleAdd = useCallback(() => {
@@ -265,6 +308,10 @@ const TransactionsTable = () => {
     </div>
   );
 
+  // ── Shared input class (reused from existing controls) ────────────────────
+  const controlClass =
+    "h-8 px-3 text-xs border font-[font2] border-[#fdb74db7] rounded-full bg-white outline-none text-gray-700";
+
   return (
     <div className="p-6 max-w-6xl mx-auto">
       {/* ── KPI Cards ── */}
@@ -292,8 +339,9 @@ const TransactionsTable = () => {
       {/* ── Section Title ── */}
       <h2 className="text-xl font-[font2] text-gray-800 mb-3">Transactions</h2>
 
-      {/* ── Controls ── */}
-      <div className="flex items-center gap-2 mb-3 flex-wrap">
+      {/* ── Controls Row 1: existing filters ── */}
+      <div className="flex items-center gap-2 mb-2 flex-wrap">
+        {/* Search */}
         <input
           type="text"
           placeholder="Enter title…"
@@ -302,32 +350,22 @@ const TransactionsTable = () => {
           className="rounded-full font-[font2] h-8 px-3 text-xs border border-[#fdb74db7] bg-white outline-none text-gray-700 placeholder-gray-400 w-48"
         />
 
+        {/* Type filter */}
         <select
           value={filterType}
           onChange={handleFilter}
-          className="h-8 px-3 text-xs border font-[font2] border-[#fdb74db7] rounded-full bg-white outline-none text-gray-700"
+          className={controlClass}
         >
           <option value="All">All types</option>
           <option value="Income">Income</option>
           <option value="Expense">Expense</option>
         </select>
 
-        <select
-          value={filterCategory}
-          onChange={handleCategoryFilter}
-          className="h-8 px-3 text-xs border font-[font2] border-[#fdb74db7] rounded-full bg-white outline-none text-gray-700"
-        >
-          {categories.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat === "All" ? "All categories" : cat}
-            </option>
-          ))}
-        </select>
-
+        {/* Sort */}
         <select
           value={sortOrder}
           onChange={handleSort}
-          className="h-8 px-3 text-xs font-[font2] border border-[#fdb74db7] rounded-full bg-white outline-none text-gray-700"
+          className={controlClass}
         >
           <option value="latest">Latest first</option>
           <option value="oldest">Oldest first</option>
@@ -335,11 +373,66 @@ const TransactionsTable = () => {
           <option value="low">Amount: Low → High</option>
         </select>
 
+        {/* ── NEW: Date Range ── */}
+        <input
+          type="date"
+          value={dateFrom}
+          onChange={handleDateFrom}
+          title="From date"
+          className={controlClass + " w-36 px-2"}
+        />
+        <span className="text-xs text-gray-400 font-[font2]">to</span>
+        <input
+          type="date"
+          value={dateTo}
+          onChange={handleDateTo}
+          title="To date"
+          className={controlClass + " w-36 px-2"}
+        />
+
+        {/* Add Transaction button */}
         <AddTransactionButton role={role} onAdd={handleAdd} />
+
+        {/* ── NEW: Export button ── */}
+        <button
+          onClick={handleExport}
+          className="h-8 px-3 text-xs font-[font2] border border-[#5cfd4db7] rounded-full bg-white outline-none text-gray-700 hover:bg-green-50 transition-colors cursor-pointer"
+        >
+          Export Transactions
+        </button>
 
         <span className="ml-auto text-xs text-gray-400">
           {filtered.length} transaction{filtered.length !== 1 ? "s" : ""}
         </span>
+      </div>
+
+      {/* ── Controls Row 2: NEW multi-category filter ── */}
+      <div className="flex items-center gap-2 mb-3 flex-wrap">
+        <span className="text-xs font-[font2] text-gray-400">Categories:</span>
+        {allCategories.map((cat) => {
+          const active = selectedCategories.includes(cat);
+          return (
+            <button
+              key={cat}
+              onClick={() => handleCategoryToggle(cat)}
+              className={`h-7 px-2.5 text-xs font-[font2] border rounded-full transition-colors ${
+                active
+                  ? "border-[#fdb74d] bg-amber-50 text-amber-700"
+                  : "border-[#fdb74db7] bg-white text-gray-500 hover:bg-amber-50"
+              }`}
+            >
+              {cat}
+            </button>
+          );
+        })}
+        {selectedCategories.length > 0 && (
+          <button
+            onClick={handleClearCategories}
+            className="h-7 px-2.5 text-xs font-[font2] border border-gray-200 rounded-full bg-white text-gray-400 hover:bg-gray-100 transition-colors"
+          >
+            Clear
+          </button>
+        )}
       </div>
 
       {/* ── Table ── */}

@@ -1,0 +1,295 @@
+{
+  "rawData": {
+    "currentMonthIncome": 87500,
+    "lastMonthIncome": 74200,
+    "thisMonthExpense": 55000,
+    "lastMonthExpense": 48200
+  },
+
+  "categoryEngine": {
+    "rawCategories": [
+      { "label": "Food", "raw": 18400, "color": "#f97316" },
+      { "label": "Travel", "raw": 14200, "color": "#6366f1" },
+      { "label": "Bills", "raw": 12800, "color": "#3b82f6" },
+      { "label": "Shopping", "raw": 9600, "color": "#10b981" },
+      { "label": "Other", "raw": 6200, "color": "#f59e0b" }
+    ]
+  },
+
+  "countryData": [
+    {
+      "name": "Food & Dining",
+      "value": 18400,
+      "color": "#f97316",
+      "pct": 80,
+      "icon": "ri-restaurant-2-line"
+    },
+    {
+      "name": "Travel",
+      "value": 14200,
+      "color": "#6366f1",
+      "pct": 62,
+      "icon": "ri-flight-takeoff-line"
+    },
+    {
+      "name": "Bills",
+      "value": 12800,
+      "color": "#3b82f6",
+      "pct": 56,
+      "icon": "ri-bill-line"
+    },
+    {
+      "name": "Shopping",
+      "value": 9600,
+      "color": "#10b981",
+      "pct": 42,
+      "icon": "ri-shopping-bag-3-line"
+    }
+  ],
+
+  "transactionData": {
+    "insightText": "You spend most on Food",
+    "byPeriod": {
+      "Weekly": {
+        "total": 12400,
+        "trend": 8.2,
+        "thisWeek": {
+          "label": "₹12.4k",
+          "values": [8200, 9400, 7800, 11200, 9800, 8600, 12400]
+        },
+        "forecast": {
+          "label": "₹14.1k",
+          "values": [9000, 10500, 9200, 12000, 11000, 10200, 14100]
+        },
+        "categories": [
+          { "label": "Food", "value": 30.1, "color": "#f97316" },
+          { "label": "Travel", "value": 23.2, "color": "#6366f1" },
+          { "label": "Bills", "value": 20.9, "color": "#3b82f6" },
+          { "label": "Shopping", "value": 15.7, "color": "#10b981" },
+          { "label": "Other", "value": 10.1, "color": "#f59e0b" }
+        ]
+      },
+      "Monthly": {
+        "total": 55000,
+        "trend": 14.1,
+        "thisWeek": {
+          "label": "₹55.0k",
+          "values": [32000, 38000, 29000, 44000, 41000, 35000, 48000]
+        },
+        "forecast": {
+          "label": "₹61.2k",
+          "values": [36000, 42000, 33000, 49000, 45000, 39000, 53000]
+        },
+        "categories": [
+          { "label": "Food", "value": 30.1, "color": "#f97316" },
+          { "label": "Travel", "value": 23.2, "color": "#6366f1" },
+          { "label": "Bills", "value": 20.9, "color": "#3b82f6" },
+          { "label": "Shopping", "value": 15.7, "color": "#10b981" },
+          { "label": "Other", "value": 10.1, "color": "#f59e0b" }
+        ]
+      },
+      "Yearly": {
+        "total": 620000,
+        "trend": 22.4,
+        "thisWeek": {
+          "label": "₹6.2L",
+          "values": [44000, 48000, 52000, 58000, 61000, 55000, 62000]
+        },
+        "forecast": {
+          "label": "₹7.1L",
+          "values": [50000, 54000, 58000, 65000, 68000, 62000, 71000]
+        },
+        "categories": [
+          { "label": "Food", "value": 30.1, "color": "#f97316" },
+          { "label": "Travel", "value": 23.2, "color": "#6366f1" },
+          { "label": "Bills", "value": 20.9, "color": "#3b82f6" },
+          { "label": "Shopping", "value": 15.7, "color": "#10b981" },
+          { "label": "Other", "value": 10.1, "color": "#f59e0b" }
+        ]
+      }
+    }
+  },
+
+  "revenueData": {
+    "current": 87500,
+    "trend": 17.9,
+    "byPeriod": {
+      "1W": {
+        "values": [9200, 11400, 8700, 13200, 10800, 12100, 14400],
+        "highlight": [4, 6],
+        "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "xLabels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+      },
+      "1M": {
+        "values": [
+          28000, 31500, 26800, 34200, 29700, 33100, 38400, 35200, 41000, 37600,
+          32900, 43100, 39800, 44400, 36700, 48200, 42500, 46800, 38100, 51200,
+          44700, 49300, 41600, 53800, 47200, 52100, 43900, 55000
+        ],
+        "highlight": [18, 24],
+        "labels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28"
+        ],
+        "xLabels": ["1", "5", "10", "15", "20", "25", "28"]
+      },
+      "1Y": {
+        "values": [
+          58000, 63500, 71200, 67800, 74500, 69300, 78900, 82400, 76100, 85600,
+          79300, 87500
+        ],
+        "highlight": [8, 11],
+        "labels": [
+          "Dec",
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov"
+        ],
+        "xLabels": [
+          "Dec",
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov"
+        ]
+      }
+    }
+  },
+
+  "registrations": [
+    {
+      "id": 1,
+      "name": "Swiggy",
+      "time": "Today, 08:30 AM",
+      "email": "Food & Dining",
+      "status": "Approved",
+      "initials": "SW",
+      "bg": "#fde68a",
+      "fg": "#92400e"
+    },
+    {
+      "id": 2,
+      "name": "MakeMyTrip",
+      "time": "Today, 10:15 AM",
+      "email": "Travel",
+      "status": "Pending",
+      "initials": "MM",
+      "bg": "#dbeafe",
+      "fg": "#1e40af"
+    },
+    {
+      "id": 3,
+      "name": "Netflix",
+      "time": "Today, 12:00 PM",
+      "email": "Bills",
+      "status": "Approved",
+      "initials": "NF",
+      "bg": "#fce7f3",
+      "fg": "#9d174d"
+    },
+    {
+      "id": 4,
+      "name": "Amazon",
+      "time": "Today, 02:45 PM",
+      "email": "Shopping",
+      "status": "Declined",
+      "initials": "AZ",
+      "bg": "#d1fae5",
+      "fg": "#065f46"
+    }
+  ],
+
+  "regSparkline": [
+    1800, 2200, 1600, 2800, 3200, 2600, 3800, 3100, 4200, 3600, 2900, 4100,
+    3800, 4400
+  ],
+
+  "globalInsightsMeta": [
+    {
+      "text": "You saved ₹32,500 — up 25% from last month",
+      "tone": "positive",
+      "color": "#16a34a",
+      "value": 25.0
+    },
+    {
+      "text": "Income grew 17.9% vs last month — ₹13,300 more earned",
+      "tone": "positive",
+      "color": "#16a34a",
+      "value": 17.9
+    },
+    {
+      "text": "Expenses rose 14.1% — watch your Food",
+      "tone": "warning",
+      "color": "#dc2626",
+      "value": 14.1
+    },
+    {
+      "text": "Food rose ₹3,308 this month",
+      "tone": "warning",
+      "color": "#dc2626",
+      "value": 3308
+    },
+    {
+      "text": "Income covers expenses by 1.59× — healthy buffer",
+      "tone": "positive",
+      "color": "#16a34a",
+      "value": 1.59
+    }
+  ],
+
+  "globalInsights": [
+    "You saved ₹32,500 — up 25% from last month",
+    "Income grew 17.9% vs last month — ₹13,300 more earned",
+    "Expenses rose 14.1% — watch your Food",
+    "Food rose ₹3,308 this month",
+    "Income covers expenses by 1.59× — healthy buffer"
+  ],
+
+  "activeCustomer": {
+    "current": 4056,
+    "target": 5280,
+    "weekLabel": "Week of Nov 10 vs Forecast",
+    "trend": [3200, 3600, 3900, 3700, 4056, 4200, 4100]
+  }
+}
