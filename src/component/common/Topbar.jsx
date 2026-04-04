@@ -1,8 +1,11 @@
 import React from "react";
+import { Sun, Moon } from "lucide-react";
 import { useRole } from "../../context/RoleContext";
+import { useTheme } from "../../context/Themecontext";
 
 const Topbar = () => {
   const { role, setRole } = useRole();
+  const { isDark, toggleTheme } = useTheme();
 
   return (
     <div className="w-full flex justify-center font-[font2]">
@@ -51,6 +54,19 @@ const Topbar = () => {
 
         {/* Profile Section */}
         <div className="flex items-center gap-3">
+          {/* ── NEW: Light/Dark Toggle ── */}
+          <button
+            onClick={toggleTheme}
+            className="w-8 h-8 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/30 transition-colors"
+            aria-label="Toggle light/dark mode"
+          >
+            {isDark ? (
+              <Sun size={16} className="text-white transition-transform duration-300 rotate-0" />
+            ) : (
+              <Moon size={16} className="text-white transition-transform duration-300 rotate-0" />
+            )}
+          </button>
+
           <span className="text-white/80 text-sm hidden sm:block">
             Hello, User
           </span>
