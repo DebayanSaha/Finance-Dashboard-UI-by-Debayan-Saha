@@ -1,8 +1,60 @@
 import { useEffect, useRef, useState } from "react";
-import { Chart, registerables } from "chart.js";
+import { Chart, registerables, Tooltip } from "chart.js";
 import data from "../../data/dashboardData.json";
 
 Chart.register(...registerables);
+
+// ── Custom positioner: places tooltip ABOVE the active point ─────────────────
+// Registered once at module level so it's available to all Chart instances.
+Tooltip.positioners.abovePoint = function (elements, eventPosition) {
+  if (!elements.length) return false;
+
+  // Use the first active element as the anchor
+  const el    = elements[0];
+  const chart = el.chart ?? this.chart;
+
+  if (!chart) return false;
+
+  const x = el.element.x;
+  const y = el.element.y;
+
+  // How far above the point we want the tooltip
+  // px above the point
+  const isMobile = window.innerWidth < 640;
+const VERTICAL_OFFSET = isMobile ? 36 : 28;
+
+  // Estimated tooltip dimensions (Chart.js measures after render;
+  // we use conservative estimates to clamp before overflow occurs)
+  const tooltipWidth  = this.width  || 180;
+  const tooltipHeight = this.height || 80;
+
+  const chartArea  = chart.chartArea;
+  const canvasRect = chart.canvas.getBoundingClientRect();
+
+  // Raw desired position: centred horizontally, above the point
+  let desiredX = x - tooltipWidth / 2;
+  let desiredY = y - tooltipHeight - VERTICAL_OFFSET;
+
+  // ── Horizontal clamping: keep inside chart area ──
+  const minX = chartArea.left;
+  const maxX = chartArea.right - tooltipWidth;
+  desiredX   = Math.max(minX, Math.min(desiredX, maxX));
+
+  // ── Vertical clamping: if tooltip would go above chart top, flip it below ──
+ if (desiredY < chartArea.top) {
+  // Flip below with extra spacing so it doesn't overlap the line
+  desiredY = y + VERTICAL_OFFSET + 10;
+}
+
+  // ── Mobile: extra clamp so tooltip never exits the canvas ──
+  const canvasWidth  = canvasRect.width  || chart.width;
+  const canvasHeight = canvasRect.height || chart.height;
+
+  desiredX = Math.max(0, Math.min(desiredX, canvasWidth  - tooltipWidth));
+  desiredY = Math.max(0, Math.min(desiredY, canvasHeight - tooltipHeight));
+
+  return { x: desiredX, y: desiredY };
+};
 
 export default function BalanceChart() {
   const canvasRef = useRef(null);
@@ -25,12 +77,14 @@ export default function BalanceChart() {
     const ctx    = canvasRef.current.getContext("2d");
     const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    const gridCol  = isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)";
-    const tickCol  = isDark ? "#6b7280" : "#9ca3af";
-    const tipBg    = isDark ? "#1f2937" : "#ffffff";
-    const tipBorder= isDark ? "#374151" : "#e5e7eb";
-    const tipTitle = isDark ? "#9ca3af" : "#6b7280";
-    const tipBody  = isDark ? "#f9fafb" : "#111827";
+    const gridCol   = isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)";
+    const tickCol   = isDark ? "#6b7280" : "#9ca3af";
+   const tipBg = isDark
+  ? "rgba(31, 41, 55, 0.85)"   // dark mode
+  : "rgba(255, 255, 255, 0.85)"; // light mode
+    const tipBorder = isDark ? "#374151" : "#e5e7eb";
+    const tipTitle  = isDark ? "#9ca3af" : "#6b7280";
+    const tipBody   = isDark ? "#f9fafb" : "#111827";
 
     const fillGrad = ctx.createLinearGradient(0, 0, 0, 240);
     fillGrad.addColorStop(0,   "rgba(249,115,22,0.25)");
@@ -82,6 +136,9 @@ export default function BalanceChart() {
         plugins: {
           legend: { display: false },
           tooltip: {
+            // ── Use our custom positioner ──────────────────────────────
+            position: "abovePoint",
+            // ──────────────────────────────────────────────────────────
             backgroundColor: tipBg,
             borderColor: tipBorder,
             borderWidth: 1,
@@ -98,11 +155,11 @@ export default function BalanceChart() {
               },
               afterLabel: (item)  => {
                 if (item.datasetIndex === 0) {
-                  const p   = prev[item.dataIndex];
-                  const c   = curr[item.dataIndex];
-                  const diff= c - p;
-                  const pct = ((diff / p) * 100).toFixed(1);
-                  const s   = diff >= 0 ? "+" : "";
+                  const p    = prev[item.dataIndex];
+                  const c    = curr[item.dataIndex];
+                  const diff = c - p;
+                  const pct  = ((diff / p) * 100).toFixed(1);
+                  const s    = diff >= 0 ? "+" : "";
                   return `  Change    ${s}$${Math.abs(diff).toLocaleString()} (${s}${pct}%)`;
                 }
                 return "";
@@ -119,7 +176,7 @@ export default function BalanceChart() {
               font:  { size: 11 },
               padding: 8,
               maxRotation: 0,
-              autoSkip: true,          // ← auto-skip crowded labels on small widths
+              autoSkip: true,
               maxTicksLimit: 8,
             },
           },
@@ -172,11 +229,10 @@ export default function BalanceChart() {
   return (
     <div className="bg-transparent shadow-sm p-2 w-full">
 
-      {/* ── Header row — wraps on mobile ── */}
+      {/* ── Header row ── */}
       <div className="flex items-start justify-between flex-wrap gap-3 mb-5">
         <div>
-          <p className="text-[22px] text-gray-900 mb-0.5 font-[font2]
-            max-sm:text-lg">
+          <p className="text-[22px] text-gray-900 mb-0.5 font-[font2] max-sm:text-lg">
             Total balance overview
           </p>
           <p className="text-[13px] text-gray-400 m-0 font-[font3] max-sm:text-[11px]">
@@ -185,7 +241,6 @@ export default function BalanceChart() {
         </div>
 
         <div className="flex items-center gap-5 flex-wrap max-sm:gap-2">
-          {/* Legend — hidden on very small screens to save space */}
           <div className="flex items-center gap-[18px] text-xs text-gray-500 max-sm:hidden">
             <span className="flex items-center gap-1.5 font-[font3]">
               <span className="inline-block w-[22px] h-0.5 bg-orange-500 rounded-sm" />
@@ -197,7 +252,6 @@ export default function BalanceChart() {
             </span>
           </div>
 
-          {/* View toggle buttons */}
           <div className="flex gap-1.5">
             {["balance", "income"].map((v) => {
               const active = view === v;
@@ -220,7 +274,7 @@ export default function BalanceChart() {
         </div>
       </div>
 
-      {/* ── Stat cards — 4 cols desktop, 2 cols tablet, scrollable row on mobile ── */}
+      {/* ── Stat cards ── */}
       <div className="grid grid-cols-4 gap-2.5 mb-5
         max-md:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-2">
         {stats.map(({ label, value, sub, subColor }) => (
@@ -239,7 +293,7 @@ export default function BalanceChart() {
         ))}
       </div>
 
-      {/* ── Chart canvas — full width, height shrinks on mobile ── */}
+      {/* ── Chart canvas ── */}
       <div className="w-full flex justify-center">
         <div className="w-[98%]">
           <div className="relative h-65 max-md:h-52 max-sm:h-44">
