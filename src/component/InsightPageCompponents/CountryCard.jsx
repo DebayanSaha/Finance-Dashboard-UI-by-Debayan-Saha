@@ -62,9 +62,11 @@ const CountryCard = () => {
         </button>
       </div>
 
-      {/* Donut + legend */}
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-[96px] h-[96px] flex-shrink-0">
+      {/* Donut + legend
+          Desktop : row (unchanged)
+          Mobile  : donut slightly smaller, legend wraps naturally */}
+      <div className="flex items-center gap-3 mb-4 max-sm:gap-2">
+        <div className="w-[96px] h-[96px] flex-shrink-0 max-sm:w-[80px] max-sm:h-[80px]">
           <canvas ref={donutRef} />
         </div>
 
@@ -93,11 +95,11 @@ const CountryCard = () => {
         {countryData.map((c) => (
           <div
             key={c.name}
-            className="font-[font3] flex items-center justify-between px-3 py-2.5 rounded-xl border border-orange-200/60 hover:bg-gray-50 transition-colors cursor-default"
+            className="font-[font3] flex items-center justify-between px-3 py-2.5 rounded-xl border border-orange-200/60 hover:bg-gray-50 transition-colors cursor-default max-sm:px-2 max-sm:py-2"
           >
             <div>
               <p className="text-[11px] text-gray-400">{c.name}</p>
-              <p className="text-[14px] font-[font3] text-gray-900 tabular-nums">
+              <p className="text-[14px] font-[font3] text-gray-900 tabular-nums max-sm:text-[13px]">
                 ${c.value.toLocaleString()}
               </p>
             </div>

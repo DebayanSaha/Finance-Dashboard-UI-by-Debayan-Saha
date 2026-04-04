@@ -120,7 +120,7 @@ const TransactionCard = () => {
       <div className="flex items-center justify-between mb-1">
         <div>
           <div className="flex items-baseline gap-2.5">
-            <span className="text-[28px] font-[font1] tracking-tight text-gray-900 leading-none tabular-nums">
+            <span className="text-[28px] font-[font1] tracking-tight text-gray-900 leading-none tabular-nums max-sm:text-[22px]">
               ₹{(period.total / 1000).toFixed(1)}k
             </span>
             <span className="font-[font3] inline-flex items-center gap-1 text-[11px] font-semibold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
@@ -136,7 +136,7 @@ const TransactionCard = () => {
         </div>
       </div>
 
-      {/* Mini charts */}
+      {/* Mini charts — narrower on mobile but still side-by-side */}
       <div className="grid grid-cols-2 gap-3 mt-4 font-[font3]">
         {[
           { key: "thisWeek", label: "This period", val: period.thisWeek.label, values: period.thisWeek.values, color: "#3b82f6" },
@@ -144,8 +144,9 @@ const TransactionCard = () => {
         ].map(({ key, label, val, values, color }) => (
           <div key={key}>
             <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-1">{label}</p>
-            <p className="text-[13px] font-semibold text-gray-800 mb-2">{val}</p>
-            <div className="h-[44px]">
+            <p className="text-[13px] font-semibold text-gray-800 mb-2 max-sm:text-[11px]">{val}</p>
+            {/* Chart container: slightly shorter on mobile to avoid overflow */}
+            <div className="h-[44px] max-sm:h-[36px]">
               <MiniBarChart data={values} color={color} />
             </div>
           </div>
@@ -157,7 +158,8 @@ const TransactionCard = () => {
         <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-2.5">
           Category split
         </p>
-        <div className="h-14">
+        {/* Taller on mobile so horizontal bars aren't squished */}
+        <div className="h-14 max-sm:h-20">
           <canvas ref={catRef} />
         </div>
       </div>

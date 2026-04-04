@@ -18,9 +18,7 @@ const RevenueCard = () => {
 
       if (chartRef.current) chartRef.current.destroy();
 
-      // Active dataset
       const period = revenueData.byPeriod[activeTab];
-
       const ctx = canvasRef.current.getContext("2d");
 
       chartRef.current = new Chart(ctx, {
@@ -64,18 +62,17 @@ const RevenueCard = () => {
     };
   }, [activeTab, revenueData]);
 
-  // Dynamic labels
   const xLabels = revenueData.byPeriod[activeTab].xLabels;
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5">
+    <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-5 max-sm:p-4">
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
         <span className="text-xl font-[font2] text-gray-800">Revenue</span>
       </div>
 
       {/* Big number */}
-      <div className="text-[35px] font-[font1] text-gray-900 leading-none">
+      <div className="text-[35px] font-[font1] text-gray-900 leading-none max-sm:text-[28px]">
         ${revenueData.current.toLocaleString()}
       </div>
 
@@ -102,8 +99,8 @@ const RevenueCard = () => {
         ))}
       </div>
 
-      {/* Chart */}
-      <div className="relative h-[160px]">
+      {/* Chart — slightly shorter on mobile to keep viewport clean */}
+      <div className="relative h-[160px] max-sm:h-[120px]">
         <canvas ref={canvasRef} />
       </div>
 
