@@ -166,18 +166,18 @@ https://finance-dashboard-phi-ten.vercel.app/
 *(Reviewers: Please run the project locally or view the live deployment link for the complete experience!)*
 
 <!-- Screenshot: Dashboard showing KPI cards and time-based balance trend chart -->
-![Dashboard Light View](./screenshots/1.png)
+<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/1.png" />
 
-![Dashboard Dark View](./screenshots/2.png)
+<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/2.png" />
 
 <!-- Screenshot: Transactions page with search, category filtering, and sorting in action -->
-![Transactions Light Ledger](./screenshots/3.png)
+<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/3.png" />
 
-![Transactions Dark Ledger](./screenshots/4.png)
+<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/4.png" />
 
 <!-- Screenshot: Insights page with detailed category breakdown charts -->
-![Insights Light View](./screenshots/5.png)
+<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/5.png" />
 
-![Insights Dark view](./screenshots/6.png)
+<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/6.png" />
 
 > *Placeholders added. Be sure to link real screenshots and the live demo URL for the final portfolio piece.*
