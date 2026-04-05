@@ -165,19 +165,45 @@ https://finance-dashboard-phi-ten.vercel.app/
 
 *(Reviewers: Please run the project locally or view the live deployment link for the complete experience!)*
 
-<!-- Screenshot: Dashboard showing KPI cards and time-based balance trend chart -->
-<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/1.png" />
+###  Dashboard Page
 
-<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/2.png" />
+<table>
+  <tr>
+    <td align="center"><b> Light Mode</b></td>
+    <td align="center"><b> Dark Mode</b></td>
+  </tr>
+  <tr>
+    <td><img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/1.png" width="100%" /></td>
+    <td><img alt="Dashboard Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/2.png" width="100%" /></td>
+  </tr>
+</table>
 
-<!-- Screenshot: Transactions page with search, category filtering, and sorting in action -->
-<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/3.png" />
+---
 
-<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/4.png" />
+###  Transactions Page
 
-<!-- Screenshot: Insights page with detailed category breakdown charts -->
-<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/5.png" />
+<table>
+  <tr>
+    <td align="center"><b> Light Mode</b></td>
+    <td align="center"><b> Dark Mode</b></td>
+  </tr>
+  <tr>
+    <td><img alt="Transactions Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/3.png" width="100%" /></td>
+    <td><img alt="Transactions Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/4.png" width="100%" /></td>
+  </tr>
+</table>
 
-<img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/blob/main/public/screenshots/6.png" />
+---
 
-> *Placeholders added. Be sure to link real screenshots and the live demo URL for the final portfolio piece.*
+###  Insights Page
+
+<table>
+  <tr>
+    <td align="center"><b> Light Mode</b></td>
+    <td align="center"><b> Dark Mode</b></td>
+  </tr>
+  <tr>
+    <td><img alt="Insights Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/5.png" width="100%" /></td>
+    <td><img alt="Insights Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/6.png" width="100%" /></td>
+  </tr>
+</table>
