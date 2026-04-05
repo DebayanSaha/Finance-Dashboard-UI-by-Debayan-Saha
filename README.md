@@ -5,6 +5,52 @@
 A browser-based personal finance dashboard for tracking balances, managing transactions, and exploring spending insights. Built entirely on React with no backend — all data is persisted via `localStorage`. State is managed globally through Context API, with all metrics derived dynamically from raw transaction data.
 
 ---
+## User Interface
+
+*(Reviewers: Please run the project locally or view the live deployment link for the complete experience!)*
+
+###  Dashboard Page
+
+<table>
+  <tr>
+    <td align="center"><b> Light Mode</b></td>
+    <td align="center"><b> Dark Mode</b></td>
+  </tr>
+  <tr>
+    <td><img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/1.png" width="100%" /></td>
+    <td><img alt="Dashboard Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/2.png" width="100%" /></td>
+  </tr>
+</table>
+
+---
+
+###  Transactions Page
+
+<table>
+  <tr>
+    <td align="center"><b> Light Mode</b></td>
+    <td align="center"><b> Dark Mode</b></td>
+  </tr>
+  <tr>
+    <td><img alt="Transactions Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/3.png" width="100%" /></td>
+    <td><img alt="Transactions Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/4.png" width="100%" /></td>
+  </tr>
+</table>
+
+---
+
+###  Insights Page
+
+<table>
+  <tr>
+    <td align="center"><b> Light Mode</b></td>
+    <td align="center"><b> Dark Mode</b></td>
+  </tr>
+  <tr>
+    <td><img alt="Insights Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/5.png" width="100%" /></td>
+    <td><img alt="Insights Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/6.png" width="100%" /></td>
+  </tr>
+</table>
 
 ## Feature Checklist
 
@@ -161,49 +207,3 @@ https://finance-dashboard-phi-ten.vercel.app/
 
 ---
 
-## Screenshots
-
-*(Reviewers: Please run the project locally or view the live deployment link for the complete experience!)*
-
-###  Dashboard Page
-
-<table>
-  <tr>
-    <td align="center"><b> Light Mode</b></td>
-    <td align="center"><b> Dark Mode</b></td>
-  </tr>
-  <tr>
-    <td><img alt="Dashboard Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/1.png" width="100%" /></td>
-    <td><img alt="Dashboard Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/2.png" width="100%" /></td>
-  </tr>
-</table>
-
----
-
-###  Transactions Page
-
-<table>
-  <tr>
-    <td align="center"><b> Light Mode</b></td>
-    <td align="center"><b> Dark Mode</b></td>
-  </tr>
-  <tr>
-    <td><img alt="Transactions Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/3.png" width="100%" /></td>
-    <td><img alt="Transactions Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/4.png" width="100%" /></td>
-  </tr>
-</table>
-
----
-
-###  Insights Page
-
-<table>
-  <tr>
-    <td align="center"><b> Light Mode</b></td>
-    <td align="center"><b> Dark Mode</b></td>
-  </tr>
-  <tr>
-    <td><img alt="Insights Light View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/5.png" width="100%" /></td>
-    <td><img alt="Insights Dark View" src="https://github.com/DebayanSaha/Finance-Dashboard-UI-by-Debayan-Saha/raw/main/public/screenshots/6.png" width="100%" /></td>
-  </tr>
-</table>
