@@ -11,12 +11,13 @@ import Insights         from "./pages/Insights";
 import FinanceDashboard from "./pages/FinanceDashboard";
 import MainLayout       from "./layouts/MainLayout";
 import { RoleProvider } from "./context/RoleContext";
+import { ThemeProvider } from "./context/Themecontext";
 
 // ── Transition variant — fade + subtle upward slide ──────────────────────────
 const pageVariants = {
-  initial:  { opacity: 0, y: 10 },
+  initial:  { opacity: 0, y: 8 },
   animate:  { opacity: 1, y: 0  },
-  exit:     { opacity: 0, y: -6 },
+  exit:     { opacity: 0, y: 8 },
 };
 
 const pageTransition = {
@@ -58,18 +59,20 @@ const AnimatedRoutes = () => {
 
 // ── Root ──────────────────────────────────────────────────────────────────────
 const App = () => (
-  <RoleProvider>
-    <ToastContainer
-      position="top-right"
-      autoClose={2500}
-      hideProgressBar={false}
-      closeOnClick
-      pauseOnHover
-    />
-    <Router>
-      <AnimatedRoutes />
-    </Router>
-  </RoleProvider>
+  <ThemeProvider>
+    <RoleProvider>
+      <ToastContainer
+        position="top-right"
+        autoClose={2500}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+      />
+      <Router>
+        <AnimatedRoutes />
+      </Router>
+    </RoleProvider>
+  </ThemeProvider>
 );
 
 export default App;

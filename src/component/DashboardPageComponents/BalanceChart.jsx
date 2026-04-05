@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { Chart, registerables, Tooltip } from "chart.js";
+import { formatCurrency } from "../../utils/currency";
 import data from "../../data/dashboardData.json";
+import { useTheme } from "../../context/Themecontext";
 
 Chart.register(...registerables);
 
 // ── Custom positioner: places tooltip ABOVE the active point ─────────────────
-// Registered once at module level so it's available to all Chart instances.
 Tooltip.positioners.abovePoint = function (elements, eventPosition) {
   if (!elements.length) return false;
 
-  // Use the first active element as the anchor
   const el    = elements[0];
   const chart = el.chart ?? this.chart;
 
@@ -18,35 +18,26 @@ Tooltip.positioners.abovePoint = function (elements, eventPosition) {
   const x = el.element.x;
   const y = el.element.y;
 
-  // How far above the point we want the tooltip
-  // px above the point
   const isMobile = window.innerWidth < 640;
-const VERTICAL_OFFSET = isMobile ? 36 : 28;
+  const VERTICAL_OFFSET = isMobile ? 36 : 28;
 
-  // Estimated tooltip dimensions (Chart.js measures after render;
-  // we use conservative estimates to clamp before overflow occurs)
   const tooltipWidth  = this.width  || 180;
   const tooltipHeight = this.height || 80;
 
   const chartArea  = chart.chartArea;
   const canvasRect = chart.canvas.getBoundingClientRect();
 
-  // Raw desired position: centred horizontally, above the point
   let desiredX = x - tooltipWidth / 2;
   let desiredY = y - tooltipHeight - VERTICAL_OFFSET;
 
-  // ── Horizontal clamping: keep inside chart area ──
   const minX = chartArea.left;
   const maxX = chartArea.right - tooltipWidth;
   desiredX   = Math.max(minX, Math.min(desiredX, maxX));
 
-  // ── Vertical clamping: if tooltip would go above chart top, flip it below ──
- if (desiredY < chartArea.top) {
-  // Flip below with extra spacing so it doesn't overlap the line
-  desiredY = y + VERTICAL_OFFSET + 10;
-}
+  if (desiredY < chartArea.top) {
+    desiredY = y + VERTICAL_OFFSET + 10;
+  }
 
-  // ── Mobile: extra clamp so tooltip never exits the canvas ──
   const canvasWidth  = canvasRect.width  || chart.width;
   const canvasHeight = canvasRect.height || chart.height;
 
@@ -60,6 +51,7 @@ export default function BalanceChart() {
   const canvasRef = useRef(null);
   const chartRef  = useRef(null);
   const [view, setView] = useState("balance");
+  const { isDark } = useTheme();
 
   const { timeseries } = data;
   const labels = timeseries.labels;
@@ -70,21 +62,20 @@ export default function BalanceChart() {
   const deltaPct = d.analytics.changePercent.toFixed(1);
   const isPos    = delta >= 0;
 
+  // Rebuild chart whenever view OR isDark changes
   useEffect(() => {
     if (!canvasRef.current) return;
     if (chartRef.current) chartRef.current.destroy();
 
-    const ctx    = canvasRef.current.getContext("2d");
-    const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const ctx = canvasRef.current.getContext("2d");
 
+    // ── Theme-aware colors ──────────────────────────────────────────────────
     const gridCol   = isDark ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.05)";
     const tickCol   = isDark ? "#6b7280" : "#9ca3af";
-   const tipBg = isDark
-  ? "rgba(31, 41, 55, 0.85)"   // dark mode
-  : "rgba(255, 255, 255, 0.85)"; // light mode
-    const tipBorder = isDark ? "#374151" : "#e5e7eb";
-    const tipTitle  = isDark ? "#9ca3af" : "#6b7280";
-    const tipBody   = isDark ? "#f9fafb" : "#111827";
+    const tipBg     = isDark ? "rgba(17,24,39,0.92)"   : "rgba(255,255,255,0.92)";
+    const tipBorder = isDark ? "#374151"                : "#e5e7eb";
+    const tipTitle  = isDark ? "#9ca3af"                : "#6b7280";
+    const tipBody   = isDark ? "#f9fafb"                : "#111827";
 
     const fillGrad = ctx.createLinearGradient(0, 0, 0, 240);
     fillGrad.addColorStop(0,   "rgba(249,115,22,0.25)");
@@ -105,7 +96,7 @@ export default function BalanceChart() {
             borderColor: "#f97316",
             borderWidth: 2,
             pointBackgroundColor: "#f97316",
-            pointBorderColor: "#ffffff",
+            pointBorderColor: isDark ? "#111827" : "#ffffff",
             pointBorderWidth: 2,
             pointRadius: 3.5,
             pointHoverRadius: 6,
@@ -136,9 +127,7 @@ export default function BalanceChart() {
         plugins: {
           legend: { display: false },
           tooltip: {
-            // ── Use our custom positioner ──────────────────────────────
             position: "abovePoint",
-            // ──────────────────────────────────────────────────────────
             backgroundColor: tipBg,
             borderColor: tipBorder,
             borderWidth: 1,
@@ -151,7 +140,7 @@ export default function BalanceChart() {
               title:      (items) => items[0].label,
               label:      (item)  => {
                 const lbl = item.datasetIndex === 0 ? "This month" : "Last month";
-                return `  ${lbl}    $${item.raw.toLocaleString()}`;
+                return `  ${lbl}    ${formatCurrency(item.raw, { type: "kpi" })}`;
               },
               afterLabel: (item)  => {
                 if (item.datasetIndex === 0) {
@@ -160,7 +149,7 @@ export default function BalanceChart() {
                   const diff = c - p;
                   const pct  = ((diff / p) * 100).toFixed(1);
                   const s    = diff >= 0 ? "+" : "";
-                  return `  Change    ${s}$${Math.abs(diff).toLocaleString()} (${s}${pct}%)`;
+                  return `  Change    ${s}${formatCurrency(Math.abs(diff), { type: "kpi" })} (${s}${pct}%)`;
                 }
                 return "";
               },
@@ -189,7 +178,7 @@ export default function BalanceChart() {
               font:  { size: 11 },
               padding: 10,
               maxTicksLimit: 6,
-              callback: (v) => "$" + (v >= 1000 ? (v / 1000).toFixed(0) + "k" : v),
+              callback: (v) => formatCurrency(v, { type: "kpi" }),
             },
           },
         },
@@ -197,31 +186,31 @@ export default function BalanceChart() {
     });
 
     return () => chartRef.current?.destroy();
-  }, [view]);
+  }, [view, isDark]); // ← isDark in deps so chart rebuilds on toggle
 
   const stats = [
     {
       label: "Current",
-      value: `$${latest.toLocaleString()}`,
+      value: formatCurrency(latest, { type: "kpi" }),
       sub: `${isPos ? "▲" : "▼"} ${Math.abs(deltaPct)}% vs last month`,
       subColor: isPos ? "text-green-600" : "text-red-600",
     },
     {
       label: "Peak",
-      value: `$${d.analytics.peak.value.toLocaleString()}`,
+      value: formatCurrency(d.analytics.peak.value, { type: "kpi" }),
       sub:   d.analytics.peak.date,
       subColor: null,
     },
     {
       label: "Trough",
-      value: `$${d.analytics.trough.value.toLocaleString()}`,
+      value: formatCurrency(d.analytics.trough.value, { type: "kpi" }),
       sub:   d.analytics.trough.date,
       subColor: null,
     },
     {
       label: "Avg daily",
-      value: `$${d.analytics.average.current.toLocaleString()}`,
-      sub:   `vs $${d.analytics.average.previous.toLocaleString()} prev`,
+      value: formatCurrency(d.analytics.average.current, { type: "kpi" }),
+      sub:   `vs ${formatCurrency(d.analytics.average.previous, { type: "kpi" })} prev`,
       subColor: null,
     },
   ];
@@ -232,7 +221,8 @@ export default function BalanceChart() {
       {/* ── Header row ── */}
       <div className="flex items-start justify-between flex-wrap gap-3 mb-5">
         <div>
-          <p className="text-[22px] text-gray-900 mb-0.5 font-[font2] max-sm:text-lg">
+          <p className={`text-[22px] mb-0.5 font-[font2] max-sm:text-lg transition-colors duration-300
+            ${isDark ? "text-gray-100" : "text-gray-900"}`}>
             Total balance overview
           </p>
           <p className="text-[13px] text-gray-400 m-0 font-[font3] max-sm:text-[11px]">
@@ -260,10 +250,12 @@ export default function BalanceChart() {
                   key={v}
                   onClick={() => setView(v)}
                   className={`text-[11px] px-3 py-1 rounded-full border cursor-pointer
-                    transition-all duration-150
+                    transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-95
                     ${active
                       ? "bg-orange-500 border-orange-500 text-white font-[font3]"
-                      : "bg-transparent border-gray-200 text-gray-500 font-[font3]"
+                      : isDark
+                        ? "bg-transparent border-gray-600 text-gray-400 font-[font3] hover:border-orange-500"
+                        : "bg-transparent border-gray-200 text-gray-500 font-[font3] hover:border-orange-400"
                     }`}
                 >
                   {v === "balance" ? "Total balance" : "Income"}
@@ -278,11 +270,14 @@ export default function BalanceChart() {
       <div className="grid grid-cols-4 gap-2.5 mb-5
         max-md:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-2">
         {stats.map(({ label, value, sub, subColor }) => (
-          <div key={label} className="bg-orange-400/6 rounded-lg px-3.5 py-3 max-sm:px-2.5 max-sm:py-2">
+          <div key={label} className={`rounded-lg px-3.5 py-3 max-sm:px-2.5 max-sm:py-2
+            transition-colors duration-300
+            ${isDark ? "bg-orange-400/10" : "bg-orange-400/6"}`}>
             <p className="text-[15px] text-gray-400 mb-0.5 font-[font3] max-sm:text-[12px]">
               {label}
             </p>
-            <p className="text-[18px] font-medium text-gray-900 m-0 font-[font3] max-sm:text-[15px]">
+            <p className={`text-3xl max-md:text-2xl font-[font1] m-0 transition-colors duration-300
+              ${isDark ? "text-gray-100" : "text-gray-900"}`}>
               {value}
             </p>
             <p className={`text-[13px] mt-0.5 font-[font2] max-sm:text-[11px]

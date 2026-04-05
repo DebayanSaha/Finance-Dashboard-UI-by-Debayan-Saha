@@ -1,48 +1,63 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Menu } from "lucide-react";
 import Sidebar from "../component/common/Sidebar";
 import Topbar from "../component/common/Topbar";
 import { RoleProvider } from "../context/RoleContext";
-import { ThemeProvider, useTheme } from "../context/Themecontext";
+import { useTheme } from "../context/Themecontext";
 
 const ThemedLayout = () => {
   const { isDark } = useTheme();
-  const [mobileOpen, setMobileOpen] = useState(false);
+
+  // ── Collapse lives HERE so MainLayout controls the sidebar width ───────────
+  const [collapsed,   setCollapsed]   = useState(false);
+  const [mobileOpen,  setMobileOpen]  = useState(false);
 
   return (
-    <div className={`flex h-screen ${isDark ? "dark" : ""}`}>
-
-      {/* ── DESKTOP: sidebar in normal flow ── */}
-      <div className="w-64 fixed h-full max-md:hidden">
-        <Sidebar mobileOpen={false} onClose={() => {}} />
+    <div
+      className={`flex h-screen overflow-hidden transition-colors duration-300
+        ${isDark ? "bg-black" : "bg-white"}`}
+    >
+      {/* ── DESKTOP sidebar — in flex flow so content expands naturally ─────── */}
+      <div
+        className={`shrink-0 transition-all duration-300 ease-in-out h-full max-md:hidden
+          ${collapsed ? "w-20" : "w-64"}`}
+      >
+        <Sidebar
+          collapsed={collapsed}
+          onToggleCollapse={() => setCollapsed((c) => !c)}
+          mobileOpen={false}
+          onClose={() => {}}
+        />
       </div>
 
-      {/* ── MOBILE: sidebar as overlay, controlled by mobileOpen ── */}
+      {/* ── MOBILE sidebar — fixed overlay, not in flow ──────────────────────── */}
       <div className="hidden max-md:block">
-        <Sidebar mobileOpen={mobileOpen} onClose={() => setMobileOpen(false)} />
+        <Sidebar
+          collapsed={false}
+          onToggleCollapse={() => {}}
+          mobileOpen={mobileOpen}
+          onClose={() => setMobileOpen(false)}
+        />
       </div>
 
-      {/* ── MAIN CONTENT ── */}
-      <div className="flex-1 ml-64 flex flex-col max-md:ml-0">
+      {/* ── MAIN CONTENT — flex-1 + min-w-0 so it fills remaining space ─────── */}
+      <div className="flex-1 min-w-0 flex flex-col overflow-hidden">
 
-        {/* Topbar */}
-        <div className="fixed top-0 left-64 right-0 h-22
-          flex items-center justify-center py-2 z-50
-          max-md:left-0">
+        {/* Topbar — sticky so it stays at the top of the scroll column */}
+        <div className="sticky top-0 z-50 flex items-center justify-center py-2 shrink-0">
           <Topbar />
         </div>
 
-        {/* Page content */}
-        <div className="p-2 overflow-y-auto">
+        {/* Page content scrolls independently */}
+        <div className="flex-1 overflow-y-auto">
           <Outlet />
         </div>
 
       </div>
 
-      {/* ── FLOATING HAMBURGER BUTTON — mobile only ──────────────────────── */}
+      {/* ── FLOATING HAMBURGER — mobile only ────────────────────────────────── */}
       <button
-        onClick={() => setMobileOpen(o => !o)}
+        onClick={() => setMobileOpen((o) => !o)}
         aria-label={mobileOpen ? "Close menu" : "Open menu"}
         className={`
           hidden max-md:flex
@@ -67,9 +82,7 @@ const ThemedLayout = () => {
 
 const MainLayout = () => (
   <RoleProvider>
-    <ThemeProvider>
-      <ThemedLayout />
-    </ThemeProvider>
+    <ThemedLayout />
   </RoleProvider>
 );
 

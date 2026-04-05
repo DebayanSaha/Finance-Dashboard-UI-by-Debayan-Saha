@@ -22,28 +22,28 @@
       "value": 18400,
       "color": "#f97316",
       "pct": 80,
-      "icon": "ri-restaurant-2-line"
+      "icon": "ri-goblet-line"
     },
     {
       "name": "Travel",
       "value": 14200,
       "color": "#6366f1",
       "pct": 62,
-      "icon": "ri-flight-takeoff-line"
+      "icon": "ri-earth-line"
     },
     {
       "name": "Bills",
       "value": 12800,
       "color": "#3b82f6",
       "pct": 56,
-      "icon": "ri-bill-line"
+      "icon": "ri-receipt-line"
     },
     {
       "name": "Shopping",
       "value": 9600,
       "color": "#10b981",
       "pct": 42,
-      "icon": "ri-shopping-bag-3-line"
+      "icon": "ri-store-2-line"
     }
   ],
 

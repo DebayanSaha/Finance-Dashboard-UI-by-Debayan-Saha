@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  button:disabled {
+    @apply cursor-not-allowed;
+  }
+}
+
 @font-face {
   font-family: 'font1';
   src: url(/fonts/6842ce9bd8d1b6b1e2bb3d2e_NBArchitekProNeue-Regular.ttf);
@@ -12,3 +23,14 @@
   font-family: 'font3';
   src: url(/fonts/6867b77e6b37681112f1afa7_Roobert-Regular.woff2);
 }
+
+/* ── ConfirmModal animations ──────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95) translateY(4px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);   }
+}

@@ -1,16 +1,17 @@
 import { useState, useEffect, useRef } from "react";
 import data from "../../data/insightsData.json";
+import { formatCurrency } from "../../utils/currency";
+import { useTheme } from "../../context/Themecontext";
 
 const MiniBarChart = ({ data: chartData, color }) => {
   const ref = useRef(null);
   const chartRef = useRef(null);
+  const { isDark } = useTheme();
 
   useEffect(() => {
     const load = async () => {
       const { Chart, registerables } = await import("https://esm.sh/chart.js@4.4.1");
-
       Chart.register(...registerables);
-
       if (chartRef.current) chartRef.current.destroy();
 
       chartRef.current = new Chart(ref.current.getContext("2d"), {
@@ -41,9 +42,10 @@ const MiniBarChart = ({ data: chartData, color }) => {
 
 const TransactionCard = () => {
   const { transactionData } = data;
+  const { isDark } = useTheme();
 
   const [activePeriod, setActivePeriod] = useState("Weekly");
-  const catRef = useRef(null);
+  const catRef      = useRef(null);
   const catChartRef = useRef(null);
 
   const period = transactionData.byPeriod[activePeriod];
@@ -51,10 +53,10 @@ const TransactionCard = () => {
   useEffect(() => {
     const load = async () => {
       const { Chart, registerables } = await import("https://esm.sh/chart.js@4.4.1");
-
       Chart.register(...registerables);
-
       if (catChartRef.current) catChartRef.current.destroy();
+
+      const tickColor = isDark ? "#9ca3af" : "#9ca3af";
 
       catChartRef.current = new Chart(catRef.current.getContext("2d"), {
         type: "bar",
@@ -62,8 +64,8 @@ const TransactionCard = () => {
           labels: period.categories?.map((c) => c.label) || [],
           datasets: [
             {
-              data: period.categories?.map((c) => c.value) || [],
-              backgroundColor: period.categories?.map((c) => c.color) || [],
+              data:            period.categories?.map((c) => c.value)  || [],
+              backgroundColor: period.categories?.map((c) => c.color)  || [],
               borderRadius: 4,
             },
           ],
@@ -75,14 +77,18 @@ const TransactionCard = () => {
           plugins: {
             legend: { display: false },
             tooltip: {
+              backgroundColor: isDark ? "rgba(17,24,39,0.92)" : "rgba(255,255,255,0.95)",
+              borderColor:     isDark ? "#374151"              : "#e5e7eb",
+              borderWidth: 1,
+              bodyColor:   isDark ? "#f9fafb" : "#111827",
               callbacks: { label: (ctx) => `${ctx.parsed.x}%` },
             },
           },
           scales: {
             x: { display: false, max: 40 },
             y: {
-              ticks: { font: { size: 10 }, color: "#9ca3af" },
-              grid: { display: false },
+              ticks: { font: { size: 10 }, color: tickColor },
+              grid:   { display: false },
               border: { display: false },
             },
           },
@@ -95,10 +101,11 @@ const TransactionCard = () => {
     return () => {
       if (catChartRef.current) catChartRef.current.destroy();
     };
-  }, [activePeriod, period]);
+  }, [activePeriod, period, isDark]); // isDark triggers chart rebuild
 
   return (
-    <div className="bg-white rounded-2xl border border-gray-200/80 shadow-sm p-[18px]">
+    <div className={`rounded-3xl border shadow-sm p-[18px] transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-md dark:hover:shadow-black/30
+      ${isDark ? "bg-transparent border-orange-500/50" : "bg-white border-orange-400/60"}`}>
 
       {/* Header */}
       <div className="flex items-center justify-between mb-3">
@@ -106,7 +113,12 @@ const TransactionCard = () => {
           Transactions
         </span>
         <select
-          className="font-[font3] text-[11px] border border-gray-200 rounded-full px-2 py-1 text-gray-500 bg-gray-50 outline-none cursor-pointer"
+          className={`font-[font3] text-[11px] border rounded-full px-2 py-1 outline-none cursor-pointer
+            transition-colors duration-300
+            ${isDark
+              ? "bg-transparent border-gray-600 text-gray-400"
+              : "bg-gray-50 border-gray-200 text-gray-500"
+            }`}
           value={activePeriod}
           onChange={(e) => setActivePeriod(e.target.value)}
         >
@@ -120,8 +132,10 @@ const TransactionCard = () => {
       <div className="flex items-center justify-between mb-1">
         <div>
           <div className="flex items-baseline gap-2.5">
-            <span className="text-[28px] font-[font1] tracking-tight text-gray-900 leading-none tabular-nums max-sm:text-[22px]">
-              ₹{(period.total / 1000).toFixed(1)}k
+            <span className={`text-3xl max-md:text-2xl font-[font1] tracking-tight leading-none tabular-nums
+              transition-colors duration-300
+              ${isDark ? "text-gray-50" : "text-gray-900"}`}>
+              {formatCurrency(period.total, { type: "kpi" })}
             </span>
             <span className="font-[font3] inline-flex items-center gap-1 text-[11px] font-semibold text-orange-600 bg-orange-50 px-2 py-0.5 rounded-full">
               ↑ {period.trend}%
@@ -136,16 +150,18 @@ const TransactionCard = () => {
         </div>
       </div>
 
-      {/* Mini charts — narrower on mobile but still side-by-side */}
+      {/* Mini charts */}
       <div className="grid grid-cols-2 gap-3 mt-4 font-[font3]">
         {[
           { key: "thisWeek", label: "This period", val: period.thisWeek.label, values: period.thisWeek.values, color: "#3b82f6" },
-          { key: "forecast", label: "Forecast", val: period.forecast.label, values: period.forecast.values, color: "#f97316" },
+          { key: "forecast", label: "Forecast",    val: period.forecast.label, values: period.forecast.values, color: "#f97316" },
         ].map(({ key, label, val, values, color }) => (
           <div key={key}>
             <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-1">{label}</p>
-            <p className="text-[13px] font-semibold text-gray-800 mb-2 max-sm:text-[11px]">{val}</p>
-            {/* Chart container: slightly shorter on mobile to avoid overflow */}
+            <p className={`text-[13px] font-semibold mb-2 max-sm:text-[11px] transition-colors duration-300
+              ${isDark ? "text-gray-200" : "text-gray-800"}`}>
+              {val}
+            </p>
             <div className="h-[44px] max-sm:h-[36px]">
               <MiniBarChart data={values} color={color} />
             </div>
@@ -154,11 +170,11 @@ const TransactionCard = () => {
       </div>
 
       {/* Category chart */}
-      <div className="mt-4 pt-3 border-t border-gray-100">
+      <div className={`mt-4 pt-3 border-t transition-colors duration-300
+        ${isDark ? "border-gray-700" : "border-gray-100"}`}>
         <p className="text-[10px] uppercase tracking-widest text-gray-400 mb-2.5">
           Category split
         </p>
-        {/* Taller on mobile so horizontal bars aren't squished */}
         <div className="h-14 max-sm:h-20">
           <canvas ref={catRef} />
         </div>

@@ -189,7 +189,7 @@ function TxRow({ tx, isAdmin, onEdit }) {
       {isAdmin && (
         <button
           onClick={() => onEdit(tx)}
-          className="opacity-0 group-hover:opacity-100 transition-opacity ml-1 p-1 rounded hover:bg-gray-200 dark:hover:bg-white/10"
+          className="opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out hover:scale-[1.1] ml-1 p-1 rounded hover:bg-gray-200 dark:hover:bg-white/10"
           title="Edit"
         >
           <Icon.edit />
@@ -255,7 +255,7 @@ function TxModal({ initial, onSave, onClose }) {
                 <button
                   key={t}
                   onClick={() => set("type", t)}
-                  className={`flex-1 py-2 rounded-lg text-sm font-medium capitalize border transition-colors ${form.type === t ? "bg-red-400 text-white border-red-400" : "border-gray-200 dark:border-white/10 opacity-60"}`}
+                  className={`flex-1 py-2 rounded-lg text-sm font-medium capitalize border transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-95 ${form.type === t ? "bg-red-400 text-white border-red-400 shadow-md shadow-red-500/20" : "border-gray-200 dark:border-white/10 opacity-60"}`}
                 >
                   {t}
                 </button>
@@ -264,8 +264,8 @@ function TxModal({ initial, onSave, onClose }) {
           </div>
         </div>
         <div className="flex gap-2 mt-6">
-          <button onClick={onClose} className="flex-1 py-2 rounded-lg border border-gray-200 dark:border-white/10 text-sm opacity-60 hover:opacity-100">Cancel</button>
-          <button onClick={handleSave} className="flex-1 py-2 rounded-lg bg-red-400 text-white text-sm font-semibold hover:bg-red-500 transition-colors">Save</button>
+          <button onClick={onClose} className="flex-1 py-2 rounded-lg border border-gray-200 dark:border-white/10 text-sm opacity-60 transition-all duration-200 ease-in-out hover:opacity-100 hover:scale-[1.02] active:scale-95">Cancel</button>
+          <button onClick={handleSave} className="flex-1 py-2 rounded-lg bg-red-400 text-white text-sm font-semibold transition-all duration-200 ease-in-out hover:bg-red-500 hover:scale-[1.02] active:scale-95 hover:shadow-lg hover:shadow-red-500/20">Save</button>
         </div>
       </div>
     </div>
@@ -395,7 +395,7 @@ export default function FinanceDashboard() {
               <button
                 key={t}
                 onClick={() => setTab(t)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold capitalize transition-colors ${activeTab === t ? "bg-red-400 text-white" : "hover:bg-gray-100 dark:hover:bg-white/10 opacity-60"}`}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold capitalize transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-95 ${activeTab === t ? "bg-red-400 text-white shadow-sm shadow-red-500/20" : "hover:bg-gray-100 dark:hover:bg-white/10 opacity-60"}`}
               >
                 {t}
               </button>
@@ -519,7 +519,7 @@ export default function FinanceDashboard() {
               {isAdmin && (
                 <button
                   onClick={() => setModal({ mode: "add" })}
-                  className="flex items-center gap-1.5 bg-red-400 text-white rounded-lg px-4 py-2 text-sm font-semibold hover:bg-red-500 transition-colors"
+                  className="flex items-center gap-1.5 bg-red-400 text-white rounded-lg px-4 py-2 text-sm font-semibold transition-all duration-200 ease-in-out hover:bg-red-500 hover:scale-[1.02] active:scale-95 hover:shadow-lg hover:shadow-red-500/20"
                 >
                   <Icon.plus /> Add
                 </button>
