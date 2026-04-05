@@ -7,7 +7,7 @@
 
 ## Live Demo
 
- [finance-dashboard-phi-ten.vercel.app](https://finance-dashboard-debayan-saha.vercel.app/)
+ [finance dashboard ui](https://finance-dashboard-debayan-saha.vercel.app/)
 
 ---
 
