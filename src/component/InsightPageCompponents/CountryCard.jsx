@@ -66,14 +66,6 @@ const CountryCard = () => {
         <span className="text-[10px] font-[font2] uppercase tracking-widest text-gray-400">
           By Category
         </span>
-        {/* <button className={`w-6 h-6 rounded-md border flex items-center justify-center
-          text-[11px] cursor-pointer transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-95
-          ${isDark
-            ? "bg-transparent border-gray-600 text-gray-400 hover:bg-gray-700"
-            : "bg-gray-100 border-gray-200 text-gray-500 hover:bg-gray-200"
-          }`}>
-          ↗
-        </button> */}
       </div>
 
       {/* Donut + legend */}
