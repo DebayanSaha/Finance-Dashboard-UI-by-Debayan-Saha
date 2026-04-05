@@ -14,8 +14,9 @@ const ThemedLayout = () => {
 
   return (
     <div
+      style={{ colorScheme: isDark ? "dark" : "light" }}
       className={`flex h-screen overflow-hidden transition-colors duration-300
-        ${isDark ? "bg-black" : "bg-white"}`}
+        ${isDark ? "bg-black dark" : "bg-white"}`}
     >
       {/* ── DESKTOP sidebar — in flex flow so content expands naturally ─────── */}
       <div
