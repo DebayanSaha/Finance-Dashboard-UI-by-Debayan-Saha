@@ -7,7 +7,7 @@
 
 ## Live Demo
 
-🔗 [finance-dashboard-phi-ten.vercel.app](https://finance-dashboard-phi-ten.vercel.app/)
+ [finance-dashboard-phi-ten.vercel.app](https://finance-dashboard-phi-ten.vercel.app/)
 
 ---
 
@@ -327,7 +327,7 @@ No scenario results in a crash or unhandled error. Every state the app can reach
 
 ---
 
-## 🚀 If I Had More Time, I Would…
+##  If I Had More Time, I Would…
 
 These are features I would prioritize next, in order of impact:
 
