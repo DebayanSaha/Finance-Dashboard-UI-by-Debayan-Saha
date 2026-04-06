@@ -171,7 +171,7 @@ const Sidebar = ({ collapsed, onToggleCollapse, mobileOpen, onClose }) => {
           )}
 
           <div className="mt-3 px-1">
-            <a href="https://www.zorvyn.io/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.zorvyn.org/" target="_blank" rel="noopener noreferrer">
               <button className={`cursor-pointer flex items-center gap-2 bg-orange-500
                 hover:bg-orange-600 text-white rounded-2xl py-3 w-full
                 transition-all duration-200 ease-in-out hover:scale-[1.02] active:scale-95 shadow-md shadow-orange-200 hover:shadow-orange-500/20
