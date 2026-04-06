@@ -85,6 +85,7 @@
 | Vite | Fast dev server with HMR, optimized production builds |
 | Context API | Global state — transactions, filters, roles |
 | Tailwind CSS | Utility-first styling with custom design tokens |
+| Framer Motion | For page transitions and animation |
 | Recharts | Responsive, declarative data visualization |
 
 ### Folder Structure
@@ -96,6 +97,9 @@ src/
 ├── context/      # Global state: transactions, role, filters
 ├── utils/        # Helpers for formatting, aggregation, derivation
 └── data/         # Mock transaction dataset (seed data)
+└── hooks/        # To simulate a loading (skeleton) state for a specified duration
+└── data/         # Root layout handling theme, sidebar state, and routed content display.
+
 ```
 
 Each folder has a clear single responsibility. `components/` are stateless and reusable; `pages/` wire them together; `context/` owns the data; `utils/` holds pure logic.
